@@ -1,7 +1,8 @@
 body {
   font-family: "Greta Sans", sans-serif;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -11,10 +12,12 @@ body {
 }
 
 a {
-  color: #2b9d49;
+  color: #ff3500;
+  text-decoration: none;
+  transition: all 0.2s;
   
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
@@ -51,10 +54,6 @@ img {
   display: block;
 }
 
-a {
-  transition: all 0.2s;
-}
-
 p {
   font-size: 16px;
   line-height: 1.5em;
@@ -79,45 +78,10 @@ strong {
   }
 }
 
-.button {
-  -webkit-appearance: none;
-  border-radius: 4px;
-  background-color: #4cb252;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0px 1px 0px rgba(150, 150, 150, 0.5);
-  border: none;
-  padding: .75em 2.25em;
-  margin: 0 0 1.25rem;
-  font-size: .875em;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Greta Sans', sans-serif;
-
-  @media screen and (min-width: 480px) {
-    font-size: 1em;
-  }
-
-  &:focus,
-  &:hover,
-  &:active {
-    background-color: #3ea745;
-  }
-
-  &:focus {
-    outline-color: #3ea745;
-  }
-
-  &:before {
-    content: '';
-    display: table;
-    clear: both;
-  }
+.pipe {
+  width: 100%;
 }
 
-.lang {
-  position: absolute;
-  padding: 10px 16px;
-  right: 0;
+.slast {
+  margin: 32px 0 0;
 }

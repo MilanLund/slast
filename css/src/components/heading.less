@@ -1,51 +1,75 @@
 .heading {
-    background-color: #000;
+    
+    &__img {
+        position: relative;
+        left: -14%;
+        width: 135%;
+        max-width: none;
+	}
 
 	&__title {
-        font-family: 'Greta Sans', sans-serif;
-        font-weight: normal;
-        color: #fff;
-        font-size: 1.75em;
-        padding: .75em 0 .375em;
-        text-transform: uppercase;
-        line-height: 1.25em;
+        position: relative;
+        background-image: url('../img/slast-heading.gif');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        width: 100%;
+        padding-bottom: 33%;
 
-        strong {
-            display: block;
-            font-weight: bold;
-        }
 
-        @media screen and (min-width: 480px) {
-            font-size: 3em;
-            padding: 1em 0 .375em;
-        }
-
-        @media screen and (min-width: 768px) {
-            font-size: 4em;
-        }
+        &-positioned {
+            position: absolute;
+            color: #ff3500;
+            font-family: 'Greta Sans Ext', sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 32px;
+            top: 18px;
+            left: 37%;
+        }  
 	}
 
 	&__paragraph {
-        color: #fff;
-        padding: 0 0 1.75em;
-        font-family: 'Greta Sans', serif;
-        font-size: .875em;
+        position: relative;
+        padding: 16px 0;
 
-        @media screen and (min-width: 480px) {
-            font-size: 1em;
-            padding: 0 0 2.5em;
+        strong {
+            font-family: 'Greta Sans', sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            color: #ff3500;
         }
-        
-        a {
+
+        i {
+            font-family: 'Greta Sans', sans-serif;
+            font-weight: normal;
+            font-style: italic;
+        }
+    }
+
+    &__note {
+        position: relative;
+        font-family: 'Greta Sans Ext', sans-serif;
+        font-weight: normal;
+        font-style: italic;
+        color: #ff3500;
+
+        &-link {
+            position: relative;
+            font-family: 'Greta Sans Ext', sans-serif;
+            font-weight: 900;
+            font-style: italic;
             color: #fff;
-            text-decoration: underline;
-            font-weight: bold;
 
             &:hover,
             &:active,
             &:focus {
+                color: #ff3500;
                 text-decoration: none;
             }
         }
-	}
+    }
+
+    &__wrapper {
+        padding: 210px 0 0 48px;
+    }
 }

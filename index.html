@@ -13,7 +13,7 @@
     <meta property="og:description" content="">
     <meta name="description" content="">
     <meta name="author" content="Lidi z Baru">
-    <link rel="stylesheet" href="./css/app.min.css?v=177994">
+    <link rel="stylesheet" href="./css/app.min.css?v=177996">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
@@ -34,7 +34,8 @@
   </head>
   <body ontouchstart><a href="#main">Jít k hlavnímu obsahu</a>
     <main id="main">
-      <nav class="navigation"><img class="navigation__logo" src="" alt="Slast">
+      <nav class="navigation">
+        <div class="navigation__logo"><img src="/img/logo.png" alt="Slast"></div>
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="#koktejl">koktejl</a></li>
           <li class="navigation__item"><a class="navigation__link" href="#farec">farec</a></li>
@@ -44,26 +45,26 @@
       <section class="heading">
         <div class="grid">
           <div class="grid__wrapper">
-            <div class="grid__unit grid__unit--1 grid__unit-sm--1-2"><img class="heading__img" src="" alt="Vstup do Slasti"></div>
-            <div class="grid__unit grid__unit--1 grid__unit-sm--1-2">
-              <h1 class="heading__title"> <span class="heading__title-positioned">Svoboda je</span><span class="sr-only">Slast</span></h1>
-              <p class="heading__paragraph">Ať už jste o Slasti někdy slyšeli nebo ne – teď budete trochu šokováni.<strong>SLAST 1.0 </strong>měla totiž být <i>„vibe dining”</i>podnik, kde se hoduje u nejvybranějšího jídla a zároveň tančí na stolech. Postupem času nám ale došlo, že se význam slova „slast” na fancy talířky jednoduše nevleze. Proto <strong>SLAST 2.0 </strong>– labyrint rozkoší ukrytých v každém koutku inspirativního lounge baru. Koktejl v ruce, farec na stole, art (nejen) na stěně a široko daleko nikdo, kdo by Vám říkal, jak se máte chovat. 
-                <striong>Enjoy.</striong>
-              </p>
-              <div class="grid__wrapper">
-                <div class="grid__unit grid__unit--1 grid__unit-sm--1-2">
-                  <p class="heading__note">Otevřeno každý den od 16.00 do 01.00</p><a class="heading__note-link" href="">Zelný trh 10</a>
-                  <p class="heading__note">Máme zkušební provoz – přijďte!</p>
-                </div>
-                <div class="grid__unit grid__unit--1 grid__unit-sm--1-2">
-                  <ul class="social">
-                    <li class="social__item"><a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank"></a>
-                      <div class="sr-only">Facebook</div>
-                    </li>
-                    <li class="social__item"><a class="social__link social__link--ig" href="https://www.instagram.com/" target="_blank"></a>
-                      <div class="sr-only">Instagram</div>
-                    </li>
-                  </ul>
+            <div class="grid__unit grid__unit--1 grid__unit--sm-1-2"><img class="heading__img" src="/img/vstup.jpg" alt="Vstup do Slasti"></div>
+            <div class="grid__unit grid__unit--1 grid__unit--sm-1-2">
+              <div class="heading__wrapper">
+                <h1 class="heading__title"> <span class="heading__title-positioned">Svoboda je</span><span class="sr-only">Slast</span></h1>
+                <p class="heading__paragraph">Ať už jste o Slasti někdy slyšeli nebo ne – teď budete trochu šokováni. <strong>SLAST 1.0 </strong>měla totiž být <i>„vibe dining” </i>podnik, kde se hoduje u nejvybranějšího jídla a zároveň tančí na stolech. Postupem času nám ale došlo, že se význam slova „slast” na fancy talířky jednoduše nevleze. Proto <strong>SLAST 2.0 </strong>– labyrint rozkoší ukrytých v každém koutku inspirativního lounge baru. Koktejl v ruce, farec na stole, art (nejen) na stěně a široko daleko nikdo, kdo by Vám říkal, jak se máte chovat. <strong>Enjoy.</strong></p>
+                <div class="grid__wrapper grid__wrapper--inner">
+                  <div class="grid__unit grid__unit--1 grid__unit--sm-2-3">
+                    <p class="heading__note">Otevřeno každý den od 16.00 do 01.00</p><a class="heading__note-link" href="">Zelný trh 10</a>
+                    <p class="heading__note">Máme zkušební provoz – přijďte!</p>
+                  </div>
+                  <div class="grid__unit grid__unit--1 grid__unit--sm-1-3">
+                    <ul class="social">
+                      <li class="social__item"><a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank"></a>
+                        <div class="sr-only">Facebook</div>
+                      </li>
+                      <li class="social__item"><a class="social__link social__link--ig" href="https://www.instagram.com/" target="_blank"></a>
+                        <div class="sr-only">Instagram</div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,7 +74,7 @@
       <section class="content">
         <div class="grid">
           <div class="grid__wrapper">
-            <div class="grid__unit grid__unit--1 grid__unit-sm--1-2">
+            <div class="grid__unit grid__unit--1 grid__unit--sm-5-12">
               <div class="content__wrapper">
                 <h2 class="content__h2">koktejl</h2>
                 <h3 class="content__h3">Každý má svou SLAST – nikomu neříkáme, co má být ta jeho.</h3>
@@ -82,41 +83,43 @@
                 <ul class="selection">
                   <li class="selection__item"><a class="selection__link" href="">drinky</a></li>
                   <li class="selection__item"><a class="selection__link" href="">Zázračná</a></li>
-                  <li class="selection__item"><a class="selection__link" href="">Víno</a></li>
+                  <li class="selection__item"><a class="selection__link" href="">víno</a></li>
                   <li class="selection__item"><a class="selection__link selection__link--active" href="">čaje a káva</a></li>
                 </ul>
               </div>
             </div>
-            <div class="grid__unit grid__unit--1 grid__unit-sm--1-2"><img class="content__img content__img--koktejl" src="" alt="Oslastněný pán"></div>
+            <div class="grid__unit grid__unit--1 grid__unit--sm-7-12">
+              <div class="content__img content__img--koktejl"><img src="/img/oslastneny-pan.jpg" alt="Oslastněný pán"></div>
+            </div>
           </div>
         </div>
       </section>
       <section class="selected"><span class="selected__close">
-          <sr class="only">Zavřít</sr></span>
+          <div class="sr-only">Zavřít</div></span>
         <div class="grid">
           <div class="grid__wrapper">
             <div class="grid__unit grid__unit--1">
               <ul class="selected__list">
-                <li class="selected__item"><i>sauvignon 2012,</i>nešpor, suché, výběr z hroznů 290</li>
-                <li class="selected__item"><i>rulandské bílé 2009,</i>osička, suché, kabinetní 380 </li>
-                <li class="selected__item"><i>dornfelder 2011,</i>bukovský, polosladké, stolní 450</li>
-                <li class="selected__item"><i>sauvignon 2012,</i>nešpor, suché, výběr z hroznů 290</li>
-                <li class="selected__item"><i>rulandské bílé 2009,</i>osička, suché, kabinetní 380 </li>
-                <li class="selected__item"><i>dornfelder 2011,</i>bukovský, polosladké, stolní 450</li>
+                <li class="selected__item"><i>sauvignon 2012, </i>nešpor, suché, výběr z hroznů 290</li>
+                <li class="selected__item"><i>rulandské bílé 2009, </i>osička, suché, kabinetní 380 </li>
+                <li class="selected__item"><i>dornfelder 2011, </i>bukovský, polosladké, stolní 450</li>
+                <li class="selected__item"><i>sauvignon 2012, </i>nešpor, suché, výběr z hroznů 290</li>
+                <li class="selected__item"><i>rulandské bílé 2009, </i>osička, suché, kabinetní 380 </li>
+                <li class="selected__item"><i>dornfelder 2011, </i>bukovský, polosladké, stolní 450</li>
               </ul>
             </div>
           </div>
         </div>
-      </section><img class="pipe" src="" alt="Ultimátní pohovění">
-      <section class="content">
+      </section><img class="pipe" src="/img/rozkurovac.jpg" alt="Ultimátní pohovění">
+      <section class="content content--farec">
         <div class="grid">
           <div class="grid__wrapper align-center">
-            <div class="grid__unit grid__unit--1 grid__unit-sm--1-2">
+            <div class="grid__unit grid__unit--1 grid__unit--sm-1-2">
               <div class="content__wrapper">
                 <h2 class="content__h2">farec</h2>
                 <h3 class="content__h3">Guilty pleasure v elegantním balení.</h3>
                 <p class="content__paragraph">Opírá se Váš názor na dýmky o 12 let starou zkušenost s ušmudlaným kouřostrojem? Jste ideální Slastný člověk! Přijďte se přesvědčit, že dýmkařské řemeslo jde ohromně dopředu. Čekejte desítky různých designových i hightech dýmek a personál, který Vám pomůže vybrat dýmový zážitek na míru. </p>
-                <ul class="selection">
+                <ul class="selection selection--center">
                   <li class="selection__item"><a class="selection__link" href="">Ukážeme Vám náš farec!</a></li>
                 </ul>
               </div>
@@ -125,7 +128,7 @@
         </div>
       </section>
       <section class="selected"><span class="selected__close">
-          <sr class="only">Zavřít</sr></span>
+          <div class="sr-only">Zavřít</div></span>
         <div class="grid">
           <div class="grid__wrapper">
             <div class="grid__unit grid__unit--1">
@@ -134,10 +137,10 @@
           </div>
         </div>
       </section>
-      <section class="content">
+      <section class="content content--art">
         <div class="grid">
-          <div class="grid__wrapper align-center">
-            <div class="grid__unit grid__unit--1 grid__unit-sm--1-2">
+          <div class="grid__wrapper">
+            <div class="grid__unit grid__unit--1 grid__unit--sm-2-5">
               <div class="content__wrapper">
                 <h2 class="content__h2">art</h2>
                 <h3 class="content__h3">Nekonečno inspirace s sebou.</h3>
@@ -147,11 +150,14 @@
                 </ul>
               </div>
             </div>
+            <div class="grid__unit grid__unit--1 grid__unit--sm-3-5">
+              <div class="content__img content__img--andrej"><img src="/img/andrej.jpg" alt="Andrej"></div>
+            </div>
           </div>
         </div>
       </section>
       <section class="selected"><span class="selected__close">
-          <sr class="only">Zavřít</sr></span>
+          <div class="sr-only">Zavřít</div></span>
         <div class="grid">
           <div class="grid__wrapper">
             <div class="grid__unit grid__unit--1">
@@ -200,7 +206,6 @@
                   <div class="sr-only">Whiskey Bar, který neexistuje</div>
                 </li>
               </ul>
-              <div class="footer__note">© ANYBODY s.r.o. / Hybešova 255/17, Staré Brno / IČO 06378277 / C 101753 vedená u Krajského soudu v Brně.	</div>
             </div>
           </div>
           <div class="grid__unit grid__unit--1">
@@ -212,7 +217,7 @@
                 <div class="sr-only">Instagram</div>
               </li>
             </ul>
-          </div><img class="slast" src="" alt="Slast">
+          </div><img class="slast" src="/img/slast-footer.gif" alt="Slast">
         </div>
       </footer>
     </main>
