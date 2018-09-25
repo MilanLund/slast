@@ -1,0 +1,62 @@
+.logos {
+    text-align: center;
+    padding: 0 0 2em;
+
+    &__item {
+        display: inline-block;
+        padding: 0;
+        margin: 0 auto;
+
+        @media screen and (min-width: 480px) {
+            padding: 8px;
+        }
+    }
+    &__link {
+        display: block;
+        background-image: url('../img/podniky.gif');
+        background-size: 966px auto;
+        width: 142px;
+        height: 142px;
+        opacity: .8;
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 1;
+        }
+
+        &--turbomost {
+
+        }
+        &--bar {
+            background-position: -165px 0;
+        }
+        &--panda {
+            background-position: -330px 0;
+        }
+        &--uplne-vsude {
+            background-position: -495px 0;
+        }
+        &--nepiju-brecky {
+            background-position: -660px 0;
+        }
+        &--na-brno-dobry {
+            background-position: -825px 0;
+        }
+        &--mluvici-hlavy {
+            background-position: -78px -156px;
+        }
+        &--zazracna {
+            background-position: -245px -156px;
+        }
+        &--lidi {
+            background-position: -412px -156px;
+        }
+        &--pokoje {
+            background-position: -579px -156px;
+        }
+        &--whiskey {
+            background-position: -746px -156px;
+        }
+    }
+}

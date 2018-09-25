@@ -1,0 +1,177 @@
+extends includes/layout.pug
+block content
+    main(id='main')
+        nav.navigation
+            img(src='', alt='Slast').navigation__logo
+            ul.navigation__list
+                li.navigation__item
+                    a(href='#koktejl').navigation__link koktejl
+                li.navigation__item
+                    a(href='#farec').navigation__link farec
+                li.navigation__item
+                    a(href='#art').navigation__link art
+        section.heading
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                        img(src='', alt='Vstup do Slasti').heading__img
+                    .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                        h1.heading__title 
+                            span.heading__title-positioned Svoboda je
+                            span.sr-only Slast
+                        p.heading__paragraph
+                            | Ať už jste o Slasti někdy slyšeli nebo ne – teď budete trochu šokováni.
+                            strong SLAST 1.0 
+                            | měla totiž být 
+                            i „vibe dining”
+                            | podnik, kde se hoduje u nejvybranějšího jídla a zároveň tančí na stolech. Postupem času nám ale došlo, že se význam slova „slast” na fancy talířky jednoduše nevleze. Proto 
+                            strong SLAST 2.0 
+                            | – labyrint rozkoší ukrytých v každém koutku inspirativního lounge baru. Koktejl v ruce, farec na stole, art (nejen) na stěně a široko daleko nikdo, kdo by Vám říkal, jak se máte chovat. 
+                            striong Enjoy.
+                        .grid__wrapper
+                            .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                                p.heading__note Otevřeno každý den od 16.00 do 01.00
+                                a(href='').heading__note-link Zelný trh 10
+                                p.heading__note Máme zkušební provoz – přijďte!
+                            .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                                ul.social
+                                    li.social__item
+                                        a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                                        .sr-only Facebook
+                                    li.social__item
+                                        a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                                        .sr-only Instagram
+        section.content
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                        .content__wrapper
+                            h2.content__h2 koktejl
+                            h3.content__h3 Každý má svou SLAST – nikomu neříkáme, co má být ta jeho.
+                            p.content__paragraph 
+                                | Děláme je už nějaký pátek a umíme je na 1000 způsobů. Teď ale přidáváme 1000+1! Slastný trademark se jmenuje 
+                                i „low alko a nealko” 
+                                | aneb 
+                                i “aby sis to mohl užít, nemusíš být namol”
+                                | . Nechceme Vás opít. Chceme, aby Vás zaplavily chutě, které jste ještě nepoznali – a které jdou krásně dohromady (třeba) s našimi dýmkami. 
+                            ul.selection
+                                li.selection__item
+                                    a(href='').selection__link drinky
+                                li.selection__item
+                                    a(href='').selection__link Zázračná
+                                li.selection__item
+                                    a(href='').selection__link Víno
+                                li.selection__item
+                                    a(href='').selection__link.selection__link--active čaje a káva
+                    .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                        img(src='', alt='Oslastněný pán').content__img.content__img--koktejl
+        section.selected
+            span.selected__close
+                sr.only Zavřít
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        ul.selected__list
+                            li.selected__item
+                                i sauvignon 2012,
+                                | nešpor, suché, výběr z hroznů 290
+                            li.selected__item
+                                i rulandské bílé 2009,
+                                | osička, suché, kabinetní 380 
+                            li.selected__item
+                                i dornfelder 2011,
+                                | bukovský, polosladké, stolní 450
+                            li.selected__item
+                                i sauvignon 2012,
+                                | nešpor, suché, výběr z hroznů 290
+                            li.selected__item
+                                i rulandské bílé 2009,
+                                | osička, suché, kabinetní 380 
+                            li.selected__item
+                                i dornfelder 2011,
+                                | bukovský, polosladké, stolní 450
+        img.pipe(src='', alt='Ultimátní pohovění')
+        section.content
+            .grid
+                .grid__wrapper.align-center
+                    .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                        .content__wrapper
+                            h2.content__h2 farec
+                            h3.content__h3 Guilty pleasure v elegantním balení.
+                            p.content__paragraph Opírá se Váš názor na dýmky o 12 let starou zkušenost s ušmudlaným kouřostrojem? Jste ideální Slastný člověk! Přijďte se přesvědčit, že dýmkařské řemeslo jde ohromně dopředu. Čekejte desítky různých designových i hightech dýmek a personál, který Vám pomůže vybrat dýmový zážitek na míru. 
+                            ul.selection
+                                li.selection__item
+                                    a(href='').selection__link Ukážeme Vám náš farec!
+        section.selected
+            span.selected__close
+                sr.only Zavřít
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
+        section.content
+            .grid
+                .grid__wrapper.align-center
+                    .grid__unit.grid__unit--1.grid__unit-sm--1-2
+                        .content__wrapper
+                            h2.content__h2 art
+                            h3.content__h3 Nekonečno inspirace s sebou.
+                            p.content__paragraph Každý má svou slast, a proto i naše SLAST musí být pestrá. Svěřili jsme každou z šesti místností jinému umělci. Jediné zadání bylo: žádné překážky! Jednotlivé „výstavy” budou trvat půl roku, pak se umělci vystřídají s dalšími. A kromě dvou umělecky zpracovaných židlí, které po každém umělci zůstanou jako jeho podpis, si budete všechno ostatní moct koupit domů!
+                            ul.selection
+                                li.selection__item
+                                    a(href='').selection__link Jak to bude celé fungovat?
+        section.selected
+            span.selected__close
+                sr.only Zavřít
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
+        footer.footer
+            .grid.grid--footer
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        ul.logos     
+                            li.logos__item
+                                a.logos__link.logos__link--bar(href='http://www.barkteryneexistuje.cz/', target='_blank')
+                                .sr-only Bar, který neexistuje
+                            li.logos__item
+                                a.logos__link.logos__link--zazracna(href='https://www.zazracna.cz/', target='_blank')
+                                .sr-only Zázračná
+                            li.logos__item
+                                a.logos__link.logos__link--panda(href='http://superpandacircus.cz/', target='_blank')
+                                .sr-only Super panda circus
+                            li.logos__item
+                                a.logos__link.logos__link--uplne-vsude(href='http://uplnevsude.cz/', target='_blank')
+                                .sr-only Úplně všude
+                            li.logos__item
+                                a.logos__link.logos__link--nepiju-brecky(href='http://www.nepijubrecky.cz/', target='_blank')
+                                .sr-only Nepiju břečky
+                            li.logos__item
+                                a.logos__link.logos__link--na-brno-dobry(href='https://www.instagram.com/na_brno_dobry/', target='_blank')
+                                .sr-only Na Brno dobrý
+                            li.logos__item
+                                .logos__link.logos__link--mluvici-hlavy
+                                .sr-only Mluvící hlavy
+                            li.logos__item
+                                a.logos__link.logos__link--turbomost(href='https://www.turbomost.cz/', target='_blank')
+                                .sr-only Turbomošt        
+                            li.logos__item
+                                a.logos__link.logos__link--lidi(href='https://lidizbaru.cz/', target='_blank')
+                                .sr-only Lidi z baru
+                            li.logos__item
+                                a.logos__link.logos__link--pokoje(href='https://www.miluju4pokoje.cz/', target='_blank')
+                                .sr-only 4pokoje
+                            li.logos__item
+                                a.logos__link.logos__link--whiskey(href='https://www.facebook.com/whiskey.bar.kteryneexistuje//', target='_blank')
+                                .sr-only Whiskey Bar, který neexistuje
+                        .footer__note © ANYBODY s.r.o. / Hybešova 255/17, Staré Brno / IČO 06378277 / C 101753 vedená u Krajského soudu v Brně.	
+                .grid__unit.grid__unit--1
+                    ul.social
+                        li.social__item
+                            a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                            .sr-only Facebook
+                        li.social__item
+                            a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                            .sr-only Instagram
+                img.slast(src='', alt='Slast')

@@ -1,0 +1,8 @@
+doctype html
+html(lang='cs')
+    head
+        include head.pug
+    body(ontouchstart)
+        a(href='#main') Jít k hlavnímu obsahu
+        block content
+        script(src='./js/app.js')

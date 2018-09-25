@@ -1,0 +1,40 @@
+.social {
+    position: fixed;
+    top: 50%;
+    margin-top: -46px;
+    right: 12px;
+    display: none;
+
+    @media screen and (min-width: 800px) {
+        display: block;
+    }
+
+    &__item {
+        padding: 6px 0;
+    }
+  
+    &__link {
+        background-image:  url('../img/social.png');
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-size: 40px auto;
+        opacity: .8;
+
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 1;
+        }
+
+      &--fb {
+        
+      }
+  
+      &--ig {
+        background-position: 0 40px;
+      }
+  
+    }
+  
+  }
