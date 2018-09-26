@@ -1,10 +1,12 @@
 extends includes/layout.pug
 block content
     main(id='main')
-        nav.navigation
+        nav.navigation#navigation
             .navigation__logo
                 img(src='./img/logo.png', alt='Slast')
-            ul.navigation__list
+            a(href='#nav').navigation__trigger 
+                .sr-only Menu
+            ul.navigation__list#nav
                 li.navigation__item
                     a(href='#koktejl').navigation__link koktejl
                 li.navigation__item
@@ -14,9 +16,9 @@ block content
         section.heading
             .grid
                 .grid__wrapper
-                    .grid__unit.grid__unit--1.grid__unit--sm-1-2
+                    .grid__unit.grid__unit--1.grid__unit--sm-2-5.grid__unit--md-1-2
                         img(src='./img/vstup.jpg', alt='Vstup do Slasti').heading__img
-                    .grid__unit.grid__unit--1.grid__unit--sm-1-2
+                    .grid__unit.grid__unit--1.grid__unit--sm-3-5.grid__unit--md-1-2
                         .heading__wrapper
                             h1.heading__title 
                                 span.heading__title-positioned Svoboda je
@@ -33,7 +35,7 @@ block content
                             .grid__wrapper.grid__wrapper--inner
                                 .grid__unit.grid__unit--1.grid__unit--sm-2-3
                                     p.heading__note Otevřeno každý den od 16.00 do 01.00
-                                    a(href='').heading__note-link Zelný trh 10
+                                    a(href='https://www.google.cz/maps/place/Zeln%C3%BD+trh+293%2F10,+602+00+Brno-st%C5%99ed-Brno-m%C4%9Bsto/@49.1920769,16.6055518,17z/data=!3m1!4b1!4m5!3m4!1s0x47129456b40d075d:0x14b17b7c66cefe9b!8m2!3d49.1920769!4d16.6077405', target='_blank').heading__note-link Zelný trh 10
                                     p.heading__note Máme zkušební provoz – přijďte!
                                 .grid__unit.grid__unit--1.grid__unit--sm-1-3
                                     ul.social
@@ -43,10 +45,10 @@ block content
                                         li.social__item
                                             a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
                                             .sr-only Instagram
-        section.content
+        section.content#koktejl
             .grid
-                .grid__wrapper
-                    .grid__unit.grid__unit--1.grid__unit--sm-5-12
+                .grid__wrapper.flex-switch
+                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-5-12
                         .content__wrapper
                             h2.content__h2 koktejl
                             h3.content__h3 Každý má svou SLAST – nikomu neříkáme, co má být ta jeho.
@@ -56,45 +58,88 @@ block content
                                 | aneb 
                                 i “aby sis to mohl užít, nemusíš být namol”
                                 | . Nechceme Vás opít. Chceme, aby Vás zaplavily chutě, které jste ještě nepoznali – a které jdou krásně dohromady (třeba) s našimi dýmkami. 
-                            ul.selection
+                            ul.selection(data-selection='koktejl')
                                 li.selection__item
-                                    a(href='').selection__link drinky
+                                    a(href='#drinky').selection__link drinky
                                 li.selection__item
-                                    a(href='').selection__link Zázračná
+                                    a(href='#zazracna').selection__link Zázračná
                                 li.selection__item
-                                    a(href='').selection__link víno
+                                    a(href='#vino').selection__link víno
                                 li.selection__item
-                                    a(href='').selection__link.selection__link--active čaje a káva
-                    .grid__unit.grid__unit--1.grid__unit--sm-7-12
+                                    a(href='#cajkava').selection__link čaje a káva
+                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-7-12
                         .content__img.content__img--koktejl
                             img(src='./img/oslastneny-pan.jpg', alt='Oslastněný pán')
-        section.selected
+        section.selected(data-selected='koktejl')
             span.selected__close
                 .sr-only Zavřít
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1
-                        ul.selected__list
-                            li.selected__item
-                                i sauvignon 2012, 
-                                | nešpor, suché, výběr z hroznů 290
-                            li.selected__item
-                                i rulandské bílé 2009, 
-                                | osička, suché, kabinetní 380 
-                            li.selected__item
-                                i dornfelder 2011, 
-                                | bukovský, polosladké, stolní 450
-                            li.selected__item
-                                i sauvignon 2012, 
-                                | nešpor, suché, výběr z hroznů 290
-                            li.selected__item
-                                i rulandské bílé 2009, 
-                                | osička, suché, kabinetní 380 
-                            li.selected__item
-                                i dornfelder 2011, 
-                                | bukovský, polosladké, stolní 450
+                        .selected__content#drinky
+                            ul.selected__list
+                                li.selected__item
+                                    i sauvignon 2012, 
+                                    | nešpor, suché, výběr z hroznů 290
+                                li.selected__item
+                                    i rulandské bílé 2009, 
+                                    | osička, suché, kabinetní 380 
+                                li.selected__item
+                                    i dornfelder 2011, 
+                                    | bukovský, polosladké, stolní 450
+                                li.selected__item
+                                    i sauvignon 2012, 
+                                    | nešpor, suché, výběr z hroznů 290
+                                li.selected__item
+                                    i rulandské bílé 2009, 
+                                    | osička, suché, kabinetní 380 
+                                li.selected__item
+                                    i dornfelder 2011, 
+                                    | bukovský, polosladké, stolní 450
+                        .selected__content#zazracna
+                            ul.selected__list
+                                li.selected__item
+                                    i zazracna, 
+                                    | bukovský, polosladké, stolní 450
+                                li.selected__item
+                                    i sauvignon 2012, 
+                                    | nešpor, suché, výběr z hroznů 290
+                                li.selected__item
+                                    i rulandské bílé 2009, 
+                                    | osička, suché, kabinetní 380 
+                                li.selected__item
+                                    i dornfelder 2011, 
+                                    | bukovský, polosladké, stolní 450
+                        .selected__content#vino
+                            ul.selected__list
+                                li.selected__item
+                                    i modráke, 
+                                    | nešpor, suché, výběr z hroznů 290
+                                li.selected__item
+                                    i rulandské bílé 2009, 
+                                    | osička, suché, kabinetní 380 
+                                li.selected__item
+                                    i dornfelder 2011, 
+                                    | bukovský, polosladké, stolní 450
+                                li.selected__item
+                                    i sauvignon 2012, 
+                                    | nešpor, suché, výběr z hroznů 290
+                        .selected__content#cajkava
+                            ul.selected__list
+                                li.selected__item
+                                    i kafe, 
+                                    | nešpor, suché, výběr z hroznů 290
+                                li.selected__item
+                                    i čaj, 
+                                    | osička, suché, kabinetní 380 
+                                li.selected__item
+                                    i dornfelder 2011, 
+                                    | bukovský, polosladké, stolní 450
+                                li.selected__item
+                                    i sauvignon 2012, 
+                                    | nešpor, suché, výběr z hroznů 290
         img.pipe(src='./img/rozkurovac.jpg', alt='Ultimátní pohovění')
-        section.content.content--farec
+        section.content.content--farec#farec
             .grid
                 .grid__wrapper.align-center
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2
@@ -102,37 +147,39 @@ block content
                             h2.content__h2 farec
                             h3.content__h3 Guilty pleasure v elegantním balení.
                             p.content__paragraph Opírá se Váš názor na dýmky o 12 let starou zkušenost s ušmudlaným kouřostrojem? Jste ideální Slastný člověk! Přijďte se přesvědčit, že dýmkařské řemeslo jde ohromně dopředu. Čekejte desítky různých designových i hightech dýmek a personál, který Vám pomůže vybrat dýmový zážitek na míru. 
-                            ul.selection.selection--center
+                            ul.selection.selection--center(data-selection='farec')
                                 li.selection__item
-                                    a(href='').selection__link Ukážeme Vám náš farec!
-        section.selected
+                                    a(href='#ukazfarec').selection__link Ukážeme Vám náš farec!
+        section.selected(data-selected='farec')
             span.selected__close
                 .sr-only Zavřít
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1
-                        p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
-        section.content.content--art
+                        .selected__content#ukazfarec
+                            p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
+        section.content.content--art#art
             .grid
-                .grid__wrapper
-                    .grid__unit.grid__unit--1.grid__unit--sm-2-5
+                .grid__wrapper.flex-switch
+                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-2-5
                         .content__wrapper
                             h2.content__h2 art
                             h3.content__h3 Nekonečno inspirace s sebou.
                             p.content__paragraph Každý má svou slast, a proto i naše SLAST musí být pestrá. Svěřili jsme každou z šesti místností jinému umělci. Jediné zadání bylo: žádné překážky! Jednotlivé „výstavy” budou trvat půl roku, pak se umělci vystřídají s dalšími. A kromě dvou umělecky zpracovaných židlí, které po každém umělci zůstanou jako jeho podpis, si budete všechno ostatní moct koupit domů!
-                            ul.selection
+                            ul.selection(data-selection='art')
                                 li.selection__item
-                                    a(href='').selection__link Jak to bude celé fungovat?
-                    .grid__unit.grid__unit--1.grid__unit--sm-3-5
+                                    a(href='#fungovani').selection__link Jak to bude celé fungovat?
+                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-3-5
                         .content__img.content__img--andrej
                             img(src='./img/andrej.jpg', alt='Andrej')
-        section.selected
+        section.selected(data-selected='art')
             span.selected__close
                 .sr-only Zavřít
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1
-                        p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
+                        .selected__content#fungovani
+                            p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
         footer.footer
             .grid.grid--footer
                 .grid__wrapper

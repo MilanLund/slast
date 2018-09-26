@@ -1,22 +1,37 @@
 .content {
 	font-family: 'Greta Sans', serif;
+	overflow-x: hidden;
 
 	&__wrapper {
-		padding: 100px 0 0 0;
+		padding: 8% 0 4%;
 		position: relative;
 		z-index: 200;
 
+		@media (min-width: 568px) {
+			padding: 24% 0 8% 0;
+		}
+
 		.content--farec & {
-			padding: 100px 0 60px 0;
+			padding: 8% 0 4%;
+
+			@media (min-width: 568px) {
+				padding: 20% 0 16% 0;
+			}
 		}
 
 		.content--art & {
-			padding: 330px 0 80px 0;
+			padding: 8% 0 4%;
+
+			@media (min-width: 568px) {
+				padding: 78% 0 16% 0;
+			}
 		}
 	}
 
 	&__paragraph {
 		padding: 0 0 24px;
+		position: relative;
+
 		i {
             font-family: 'Greta Sans', sans-serif;
             font-weight: normal;
@@ -29,8 +44,14 @@
 		color: #ff3500;
 		font-weight: 900;
 		font-style: italic;
-		font-size: 32px;
-		padding: 0 0 8px;
+		font-size: 28px;
+		padding: 0 0 4px;
+		position: relative;
+
+		@media (min-width: 568px) {
+			font-size: 32px;
+			padding: 0 0 8px;
+		}
 
 		&:after {
 			content: '.';
@@ -42,10 +63,21 @@
 		color: #fff;
 		font-weight: 300;
 		font-style: italic;
-		font-size: 40px;
+		font-size: 28px;
 		line-height: 1em;
+		padding: 0 0 8px;
+		position: relative;
 
-		padding: 0 0 12px;
+		@media (min-width: 568px) {
+			font-size: 32px;
+			padding: 0 0 12px;
+		}
+
+		@media (min-width: 896px) {
+			font-size: 40px;
+			padding: 0 0 12px;
+		}
+
 	}
 
 	&__img {
@@ -53,6 +85,14 @@
 			text-align: right;
 			position: relative;
 			right: -10%;
+
+			@media (min-width: 568px) {
+				top: 20%;
+			}
+
+			@media (min-width: 896px) {
+				top: 0;
+			}
 		
 			img {
 				display: inline-block;
@@ -62,11 +102,27 @@
 		&--andrej {
 			position: relative;
 			left: -25%;
+
+			@media (min-width: 568px) {
+				left: -65%;
+			}
+
+			@media (min-width: 896px) {
+				left: -25%;
+			}
 		
 			img {
 				display: inline-block;
 				width: 150%;
 				max-width: none;
+
+				@media (min-width: 568px) {
+					width: 200%;
+				}
+
+				@media (min-width: 896px) {
+					width: 150%;
+				}
 			}
 		}
 	}

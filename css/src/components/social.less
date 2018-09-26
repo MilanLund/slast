@@ -1,5 +1,14 @@
 .social {
     text-align: right;
+    padding: 8px 0 0; 
+
+    @media (min-width: 568px) {
+        padding: 0; 
+    }
+
+    .footer & {
+        padding-right: 2%;
+    }
 
     &__item {
         padding: 4px 0 0;
@@ -14,10 +23,16 @@
     &__link {
         background-image:  url('../img/social.png');
         display: block;
-        width: 62px;
-        height: 62px;
-        background-size: auto 62px;
+        width: 44px;
+        height: 44px;
+        background-size: auto 44px;
         opacity: .8;
+
+        @media (min-width: 1024px) {
+            width: 62px;
+            height: 62px;
+            background-size: auto 62px;
+        }
 
         &:hover,
         &:active,
@@ -30,7 +45,11 @@
       }
   
       &--ig {
-        background-position: 62px 0;
+        background-position: 44px 0;
+
+        @media (min-width: 1024px) {
+            background-position: 62px 0;
+        }
       }
   
     }

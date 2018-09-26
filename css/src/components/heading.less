@@ -1,10 +1,27 @@
 .heading {
-    
+    overflow-x: hidden;
+
     &__img {
         position: relative;
-        left: -14%;
-        width: 135%;
+        left: 0;
+        width: 100%;
         max-width: none;
+        top: 4%;
+
+        @media (min-width: 568px) {
+            top: 16%;
+            left: -7%;
+            width: 135%;
+        }
+
+        @media (min-width: 896px) {
+            top: 8%;
+            left: -14%;
+        }
+
+        @media (min-width: 1024px) {
+            top: 0;
+        }
 	}
 
 	&__title {
@@ -15,7 +32,6 @@
         width: 100%;
         padding-bottom: 33%;
 
-
         &-positioned {
             position: absolute;
             color: #ff3500;
@@ -23,8 +39,31 @@
             font-weight: 900;
             font-style: italic;
             font-size: 32px;
-            top: 18px;
-            left: 37%;
+            top: -48px;
+            left: 24%;
+
+            @media (min-width: 568px) {
+                left: 34%;
+                font-size: 24px;
+                top: -24px;
+            }
+
+            @media (min-width: 720px) {
+                left: 34%;
+                font-size: 24px;
+                top: 12px;
+            }
+
+            @media (min-width: 1024px) {
+                left: 34%;
+                font-size: 28px;
+                top: 18px;
+            }
+
+            @media (min-width: 1180px) {
+                left: 37%;
+                font-size: 32px;
+            }
         }  
 	}
 
@@ -70,6 +109,10 @@
     }
 
     &__wrapper {
-        padding: 210px 0 0 48px;
+        padding: 0;
+
+        @media (min-width: 568px) {
+            padding: 36% 0 0 48px;
+        }
     }
 }

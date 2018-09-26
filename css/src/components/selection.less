@@ -20,6 +20,15 @@
             &:only-child {
                 margin: 0 auto;
                 width: auto;
+
+                .selection__link {
+                    padding: 8px 24px;
+
+                    @media (min-width: 1024px) {
+                        font-size: 26px;
+                        padding: 10px 36px;
+                    }
+                }
             }
         }
     }
@@ -27,14 +36,19 @@
 	&__link {
         box-sizing: border-box;
         text-align: center;
-        font-size: 26px;
+        font-size: 20px;
         font-family: 'Greta Sans', sans-serif;
         font-weight: 300;
         color: #fff;
         border: 1px solid #fff;
         width: 100%;
         display: block;
-        padding: 10px 36px;
+        padding: 8px 14px;
+
+        @media (min-width: 1024px) {
+            font-size: 26px;
+            padding: 10px 36px;
+		}
 
         &:hover {
             text-decoration: none;
