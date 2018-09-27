@@ -105,14 +105,15 @@ a.utility-link {
   display: inline-block;
 }
 
-img[data-lzled="true"] {
+img[data-src] {
+  opacity: 0;
+}
+
+img[data-src][data-lzled="true"] {
   opacity: 1;
   transition: opacity 0.5s;
 }
 
-img[src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="] {
-  opacity: 0;
-}
 /*
 .img-container {
   position: relative;
