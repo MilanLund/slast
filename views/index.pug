@@ -3,7 +3,7 @@ block content
     main(id='main')
         nav.navigation#navigation
             .navigation__logo
-                img(src='./img/logo.png', alt='Slast')
+                img(data-src='./img/logo.png', alt='Slast', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
             a(href='#nav').navigation__trigger 
                 .sr-only Menu
             ul.navigation__list#nav
@@ -17,7 +17,7 @@ block content
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1.grid__unit--sm-2-5.grid__unit--md-1-2
-                        img(src='./img/vstup.jpg', alt='Vstup do Slasti').heading__img
+                        img(data-src='./img/vstup.jpg', alt='Vstup do Slasti', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==").heading__img
                     .grid__unit.grid__unit--1.grid__unit--sm-3-5.grid__unit--md-1-2
                         .heading__wrapper
                             h1.heading__title 
@@ -69,7 +69,7 @@ block content
                                     a(href='#cajkava').selection__link čaje a káva
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-7-12
                         .content__img.content__img--koktejl
-                            img(src='./img/oslastneny-pan.jpg', alt='Oslastněný pán')
+                            img(data-src='./img/oslastneny-pan.jpg', alt='Oslastněný pán', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
         section.selected(data-selected='koktejl')
             span.selected__close
                 .sr-only Zavřít
@@ -138,7 +138,7 @@ block content
                                 li.selected__item
                                     i sauvignon 2012, 
                                     | nešpor, suché, výběr z hroznů 290
-        img.pipe(src='./img/rozkurovac.jpg', alt='Ultimátní pohovění')
+        img.pipe(data-src='./img/rozkurovac.jpg', alt='Ultimátní pohovění', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
         section.content.content--farec#farec
             .grid
                 .grid__wrapper.align-center
@@ -171,7 +171,7 @@ block content
                                     a(href='#fungovani').selection__link Jak to bude celé fungovat?
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-3-5
                         .content__img.content__img--andrej
-                            img(src='./img/andrej.jpg', alt='Andrej')
+                            img(data-src='./img/andrej.jpg', alt='Andrej', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
         section.selected(data-selected='art')
             span.selected__close
                 .sr-only Zavřít
@@ -226,7 +226,7 @@ block content
                         li.social__item
                             a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
                             .sr-only Instagram
-                img.slast(src='./img/slast-footer.gif', alt='Slast')
+                img.slast(data-src='./img/slast-footer.gif', alt='Slast', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
                 .align-center
                     a.utility-link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
 

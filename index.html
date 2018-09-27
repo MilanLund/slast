@@ -13,7 +13,7 @@
     <meta property="og:description" content="">
     <meta name="description" content="">
     <meta name="author" content="Lidi z Baru">
-    <link rel="stylesheet" href="./css/app.min.css?v=178005">
+    <link rel="stylesheet" href="./css/app.min.css?v=178014">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
@@ -31,11 +31,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazyloadjs/3.2.2/lazyload.js"></script>
   </head>
   <body ontouchstart><a href="#main">Jít k hlavnímu obsahu</a>
     <main id="main">
       <nav class="navigation" id="navigation">
-        <div class="navigation__logo"><img src="./img/logo.png" alt="Slast"></div><a class="navigation__trigger" href="#nav"> 
+        <div class="navigation__logo"><img data-src="./img/logo.png" alt="Slast" onload="lzld(this)" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div><a class="navigation__trigger" href="#nav"> 
           <div class="sr-only">Menu</div></a>
         <ul class="navigation__list" id="nav">
           <li class="navigation__item"><a class="navigation__link" href="#koktejl">koktejl</a></li>
@@ -46,7 +47,7 @@
       <section class="heading">
         <div class="grid">
           <div class="grid__wrapper">
-            <div class="grid__unit grid__unit--1 grid__unit--sm-2-5 grid__unit--md-1-2"><img class="heading__img" src="./img/vstup.jpg" alt="Vstup do Slasti"></div>
+            <div class="grid__unit grid__unit--1 grid__unit--sm-2-5 grid__unit--md-1-2"><img class="heading__img" data-src="./img/vstup.jpg" alt="Vstup do Slasti" onload="lzld(this)" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
             <div class="grid__unit grid__unit--1 grid__unit--sm-3-5 grid__unit--md-1-2">
               <div class="heading__wrapper">
                 <h1 class="heading__title"> <span class="heading__title-positioned">Svoboda je</span><span class="sr-only">Slast</span></h1>
@@ -90,7 +91,7 @@
               </div>
             </div>
             <div class="grid__unit grid__unit--1 grid__unit--sm-1-2 grid__unit--md-7-12">
-              <div class="content__img content__img--koktejl"><img src="./img/oslastneny-pan.jpg" alt="Oslastněný pán"></div>
+              <div class="content__img content__img--koktejl"><img data-src="./img/oslastneny-pan.jpg" alt="Oslastněný pán" onload="lzld(this)" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
             </div>
           </div>
         </div>
@@ -137,7 +138,7 @@
             </div>
           </div>
         </div>
-      </section><img class="pipe" src="./img/rozkurovac.jpg" alt="Ultimátní pohovění">
+      </section><img class="pipe" data-src="./img/rozkurovac.jpg" alt="Ultimátní pohovění" onload="lzld(this)" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
       <section class="content content--farec" id="farec">
         <div class="grid">
           <div class="grid__wrapper align-center">
@@ -180,7 +181,7 @@
               </div>
             </div>
             <div class="grid__unit grid__unit--1 grid__unit--sm-1-2 grid__unit--md-3-5">
-              <div class="content__img content__img--andrej"><img src="./img/andrej.jpg" alt="Andrej"></div>
+              <div class="content__img content__img--andrej"><img data-src="./img/andrej.jpg" alt="Andrej" onload="lzld(this)" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></div>
             </div>
           </div>
         </div>
@@ -248,7 +249,7 @@
                 <div class="sr-only">Instagram</div>
               </li>
             </ul>
-          </div><img class="slast" src="./img/slast-footer.gif" alt="Slast">
+          </div><img class="slast" data-src="./img/slast-footer.gif" alt="Slast" onload="lzld(this)" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
           <div class="align-center"><a class="utility-link" href="https://www.kentico.com" title="Kentico" rel="nofollow" target="_blank">Powered by Kentico CMS</a></div>
         </div>
       </footer>
