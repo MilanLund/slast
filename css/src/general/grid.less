@@ -11,8 +11,6 @@
 }
 .grid__wrapper {
     letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
-    *letter-spacing: normal; /* reset IE < 8 */
-    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
     text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
 
     /*
@@ -60,7 +58,6 @@
 
 .grid__unit {
     display: inline-block;
-    *display: inline; /* IE < 8: fake inline-block */
     zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
@@ -129,7 +126,6 @@ this the same font stack that Normalize.css sets for the `body`.
 .grid__unit--7-12,
 .grid__unit--11-12 {
     display: inline-block;
-    *display: inline;
     zoom: 1;
     letter-spacing: normal;
     word-spacing: normal;
