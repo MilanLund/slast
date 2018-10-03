@@ -6,10 +6,6 @@
         padding: 0; 
     }
 
-    .footer & {
-        padding-right: 2%;
-    }
-
     &__item {
         padding: 4px 0 0;
         display: inline-block;
@@ -17,6 +13,29 @@
 
         &:first-child {
             margin: 0 6px 0 0;
+        }
+
+        &:last-child {
+            margin: 0 0 0 6px;
+        }
+    }
+
+    &--footer {
+        padding-right: 0;
+        text-align: center;
+
+        @media (min-width: 568px) {
+            text-align: right;
+            padding-right: 2%;
+        }
+    }
+
+    &--nav {
+        margin: 9% 0 0;
+
+        .social__link {
+            background-image:  url('../img/social-nav.png'); 
+            opacity: 1;
         }
     }
   

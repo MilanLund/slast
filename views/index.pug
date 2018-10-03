@@ -7,18 +7,30 @@ block content
             a(href='#nav').navigation__trigger 
                 .sr-only Menu
             ul.navigation__list#nav
+                li.navigation__logo-inner
+                    img(src='./img/logo-black.png', alt='Slast')
+                    span.navigation__close#nav-close
+                        .sr-only Zavřít
                 li.navigation__item
                     a(href='#koktejl').navigation__link koktejl
                 li.navigation__item
                     a(href='#farec').navigation__link farec
                 li.navigation__item
                     a(href='#art').navigation__link art
+                li.navigation__social
+                    ul.social.social--nav.align-center
+                        li.social__item
+                            a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                            .sr-only Facebook
+                        li.social__item
+                            a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                            .sr-only Instagram
         section.heading
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1.grid__unit--sm-2-5.grid__unit--md-1-2
                         img(data-src='./img/vstup.jpg', alt='Vstup do Slasti', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==").heading__img
-                    .grid__unit.grid__unit--1.grid__unit--sm-3-5.grid__unit--md-1-2
+                    .grid__unit.grid__unit--1.grid__unit--sm-3-5.grid__unit--md-1-2.utilities-layer-3
                         .heading__wrapper
                             h1.heading__title 
                                 span.heading__title-positioned Svoboda je
@@ -30,7 +42,7 @@ block content
                                 i „vibe dining” 
                                 | podnik, kde se hoduje u nejvybranějšího jídla a zároveň tančí na stolech. Postupem času nám ale došlo, že se význam slova „slast” na fancy talířky jednoduše nevleze. Proto 
                                 strong SLAST 2.0 
-                                | – labyrint rozkoší ukrytých v každém koutku inspirativního lounge baru. Koktejl v ruce, farec na stole, art (nejen) na stěně a široko daleko nikdo, kdo by Vám říkal, jak se máte chovat. 
+                                | – žádná kuchyně, žádné přeleštěné stolky, ale labyrint rozkoší ukrytých v každém koutku inspirativního lounge baru. Koktejl v ruce, farec na stole, art (nejen) na stěně a široko daleko nikdo, kdo by Vám říkal, jak se máte chovat. 
                                 strong Enjoy.
                             .grid__wrapper.grid__wrapper--inner
                                 .grid__unit.grid__unit--1.grid__unit--sm-2-3
@@ -48,11 +60,11 @@ block content
         section.content#koktejl
             .grid
                 .grid__wrapper.flex-switch
-                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-5-12
+                    .grid__unit.grid__unit--1.grid__unit--sm-1-2
                         .content__wrapper
                             h2.content__h2 koktejl
                             h3.content__h3 Každý má svou SLAST – nikomu neříkáme, co má být ta jeho.
-                            p.content__paragraph 
+                            p.content__paragraph.content__paragraph--narrow
                                 | Děláme je už nějaký pátek a umíme je na 1000 způsobů. Teď ale přidáváme 1000+1! Slastný trademark se jmenuje 
                                 i „low alko a nealko” 
                                 | aneb 
@@ -60,14 +72,14 @@ block content
                                 | . Nechceme Vás opít. Chceme, aby Vás zaplavily chutě, které jste ještě nepoznali – a které jdou krásně dohromady (třeba) s našimi dýmkami. 
                             ul.selection(data-selection='koktejl')
                                 li.selection__item
-                                    a(href='#drinky').selection__link drinky
+                                    a(href='#koktejly').selection__link koktejly
                                 li.selection__item
                                     a(href='#zazracna').selection__link Zázračná
                                 li.selection__item
-                                    a(href='#vino').selection__link víno
+                                    a(href='#panaky-pivo-vino').selection__link Panáky &amp; Pivo &amp; Víno
                                 li.selection__item
-                                    a(href='#cajkava').selection__link čaje a káva
-                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-7-12
+                                    a(href='#cajove-klasiky').selection__link Čajové klasiky
+                    .grid__unit.grid__unit--1.grid__unit--sm-1-2.relative
                         .content__img.content__img--koktejl
                             img(data-src='./img/oslastneny-pan.jpg', alt='Oslastněný pán', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
         section.selected(data-selected='koktejl')
@@ -76,68 +88,88 @@ block content
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1
-                        .selected__content#drinky
+                        .selected__content#koktejly
+                            h4.selected__heading Zázračné Highbally
+                            div.selected__grid-wrapper
+                                p.selected__p Osm lehoučce opojných krasavců a krasavic, ideálních třeba k farci. Aby se Vám hlava motala tak akorát!
                             ul.selected__list
                                 li.selected__item
-                                    i sauvignon 2012, 
-                                    | nešpor, suché, výběr z hroznů 290
+                                    i Bittersweet Story
+                                    span Kdo by v mandli hledal pecku z medu? Hořkosladké, krásné překvápko!
                                 li.selected__item
-                                    i rulandské bílé 2009, 
-                                    | osička, suché, kabinetní 380 
+                                    i Top Fun 
+                                    span Topová popina! Liči sladkost, celerová suchost a tequila to rozsekne.
                                 li.selected__item
-                                    i dornfelder 2011, 
-                                    | bukovský, polosladké, stolní 450
+                                    i Mighty McKumquat 
+                                    span Citrusové kombo kumkvátu a limetky, vystřelené do stratosféry raketovou vodkou.
                                 li.selected__item
-                                    i sauvignon 2012, 
-                                    | nešpor, suché, výběr z hroznů 290
+                                    i Double B 
+                                    span Všechno co je od Bé, je dobré – jako třeba banán a Becher!
                                 li.selected__item
-                                    i rulandské bílé 2009, 
-                                    | osička, suché, kabinetní 380 
+                                    i Just Another Morning Coke
+                                    span Ranní refresh jak z příručky správného bohéma. Cola, gin a grepová rána pod pás.
                                 li.selected__item
-                                    i dornfelder 2011, 
-                                    | bukovský, polosladké, stolní 450
+                                    i Banana Guerilla 
+                                    span Líbivý banánek na rande s latino rumovou krasavicí – a kořeněné finále v džungli.
+                                li.selected__item
+                                    i Teddy Bear Red Label
+                                    span Když na medvídka Pú přijde smutek, přidá si do medu trochu whiskey.
+                                li.selected__item
+                                    i Merry Peary
+                                    span Vánoční sen o hruškovici, co zabloudila do svařáku, a našla tam perník.
+                        .selected__content#cajove-klasiky
+                            h4.selected__heading Čajové klasiky
+                            div.selected__grid-wrapper
+                                p.selected__p Ať už bylo po páté, nebo ještě ne – čas na čaj a čas na drink se právě spojili v jeden dokonalý moment. Doporučujeme pro všechny “ladies and gentlemen”!
+                            ul.selected__list
+                                li.selected__item
+                                    i 5 O’Clock Fashioned
+                                    span Klasika všech klasik, posílená červeným čajem – jasná a čistá!
+                                li.selected__item
+                                    i Top of the Bookshelf Manhattan
+                                    span Na úplně nejvrchnější poličce nejstarší oxfordské knihovny leží přesně tenhle Manhatan – moudrý whiskový klenot.
+                                li.selected__item
+                                    i Nepaloni
+                                    span Návrat z horolezecké výpravy do Nepálu – trochu hořký, trochu sladký, ale hodně dobrý.
+                                li.selected__item
+                                    i Choco Fumarita
+                                    span Nakouřená čoko variace na mexický národní poklad.
+                                li.selected__item
+                                    i Speed of Light
+                                    span Lehce kyselá, bezová coververze hitu zvaného gimlet.
+                                li.selected__item
+                                    i Wu-dong Dai-quiri
+                                    span Spojení protikladů na téma jin a jang – easy kyselost daiquiri + vypečená čínská čajovost = dokonalost.
+                                li.selected__item
+                                    i Moroccan Breakfast
+                                    span Pramen zdraví, nikoli z Posázaví, ale z Maroka. Podmáslí, máta – a samozřejmě vodka.
+                                li.selected__item
+                                    i I know What You Did Last Summer
+                                    span Vzpomínka na to nejvíc nejlepší léto, zabalená do “špricnutého” zeleného čaje.
+                        .selected__content#panaky-pivo-vino
+                            h4.selected__heading Panáky &amp; Pivo &amp; víno 
+                            div.selected__grid-wrapper
+                                p.selected__p Co by byl lounge bar (a vlastně jakýkoli bar!) bez pořádné zásoby panáků? A pořádná zásoba pro nás znamená asi 180 lahví, takže račte vybírat. Doplňujeme excelentním pivkem Chomout a několika pečlivě vybranými vinnými záležitostmi.
                         .selected__content#zazracna
+                            h4.selected__heading Zázračná &amp; shruby a fermentáty 
+                            div.selected__grid-wrapper
+                                p.selected__p Neholdujete alkoholu? Nealko ve Slasti není žádná béčková volba. Masivní výběr z barmanské limonády Zázračná, která se může honosit těmi nejzajímavějšími příchutěmi široko daleko, doplňují naše vlastní shruby a fermentáty.
                             ul.selected__list
                                 li.selected__item
-                                    i zazracna, 
-                                    | bukovský, polosladké, stolní 450
+                                    i Shruby
+                                    ul
+                                        li Banán-muškát
+                                        li Liči-ibišek
+                                        li Dýně-švestka-citronová tráva
                                 li.selected__item
-                                    i sauvignon 2012, 
-                                    | nešpor, suché, výběr z hroznů 290
+                                    i Fermentáty 
+                                    ul
+                                        li Mango Yun
+                                        li Jasmín-pomelo
+                                        li Oolong-syrovátka
                                 li.selected__item
-                                    i rulandské bílé 2009, 
-                                    | osička, suché, kabinetní 380 
-                                li.selected__item
-                                    i dornfelder 2011, 
-                                    | bukovský, polosladké, stolní 450
-                        .selected__content#vino
-                            ul.selected__list
-                                li.selected__item
-                                    i modráke, 
-                                    | nešpor, suché, výběr z hroznů 290
-                                li.selected__item
-                                    i rulandské bílé 2009, 
-                                    | osička, suché, kabinetní 380 
-                                li.selected__item
-                                    i dornfelder 2011, 
-                                    | bukovský, polosladké, stolní 450
-                                li.selected__item
-                                    i sauvignon 2012, 
-                                    | nešpor, suché, výběr z hroznů 290
-                        .selected__content#cajkava
-                            ul.selected__list
-                                li.selected__item
-                                    i kafe, 
-                                    | nešpor, suché, výběr z hroznů 290
-                                li.selected__item
-                                    i čaj, 
-                                    | osička, suché, kabinetní 380 
-                                li.selected__item
-                                    i dornfelder 2011, 
-                                    | bukovský, polosladké, stolní 450
-                                li.selected__item
-                                    i sauvignon 2012, 
-                                    | nešpor, suché, výběr z hroznů 290
+                                    i Zázračná
+                                    span Berlínský pití z Brna, aneb přírodní, lokální a ještě k tomu barmanská, neboli vyráběná mixologickými mistry a mistryněmi.
         img.pipe(data-src='./img/rozkurovac.jpg', alt='Ultimátní pohovění', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
         section.content.content--farec#farec
             .grid
@@ -156,8 +188,10 @@ block content
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1
-                        .selected__content#ukazfarec
-                            p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
+                        .selected__content.selected__content--desc#ukazfarec
+                            h4.selected__heading farec
+                            div.selected__grid-wrapper
+                                p.selected__p V Brně je dýmkáren poměrně dost a část z nich nás hodně baví. Zbytek ale jede všechno na jeden způsob. Takže jsme se rozhodli „skočit do ringu“ a pootočit trochu tím naším brněnským kolem. Vidíme v tom určitou paralelu k době, kdy jsme otevírali Bar, který neexistuje. Koktejlové bary samozřejmě existovaly, ale jak široká skupina lidí do nich chodila? A kolik z nás znalo jiný koktejl než Mojito? Vymezili jsme se tenkrát už tím, že jsme začali užívat slovo „drink”. Teď jsme na tom podobně – a naše slovo je “farec”. Takže ať žije farec!
         section.content.content--art#art
             .grid
                 .grid__wrapper.flex-switch
@@ -178,10 +212,21 @@ block content
             .grid
                 .grid__wrapper
                     .grid__unit.grid__unit--1
-                        .selected__content#fungovani
-                            p.selected__paragraph Nulla non lectus sed nisl molestie malesuada. Phasellus rhoncus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Integer imperdiet lectus quis justo. Maecenas libero. Cras elementum. Phasellus rhoncus. Aliquam erat volutpat. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nulla quis diam.
+                        .selected__content.selected__content--desc#fungovani
+                            h4.selected__heading art
+                            div.selected__grid-wrapper
+                                p.selected__p Art do veřejného prostoru patří – a proto patří i do Slasti. Ale patří i k lidem domů, aspoň k těm, co ho vážně milují. Proto Vám chceme dát možnost odnést si kousek slastného artu s sebou. Díla, která budou v jednotlivých místnostech Slasti, budou po skončení výstav určená k dražbě nebo přímému prodeji. Zatím přesně nevíme, jak to celé udělat. Docela nás nadchla myšlenka dlouhodobé online aukce, kde můžete přihazovat na mobilu přes QR kód třeba rovnou při kouření farce. O něco míň sexy variantou je cesta „kup teď”. Jednoduše si svůj art vyhlédnete a rezervujete si ho předem. Ale jak říkáme - je to pro nás nová věc, takže se od Vás rádi necháme inspirovat. Takže pokud máte nějaký nápad/podnět/názor, sem s ním!
         footer.footer
             .grid.grid--footer
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        ul.social.align-center
+                            li.social__item
+                                a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                                .sr-only Facebook
+                            li.social__item
+                                a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                                .sr-only Instagram
                 .grid__wrapper
                     .grid__unit.grid__unit--1
                         ul.logos     
@@ -218,15 +263,26 @@ block content
                             li.logos__item
                                 a.logos__link.logos__link--whiskey(href='https://www.facebook.com/whiskey.bar.kteryneexistuje/', target='_blank')
                                 .sr-only Whiskey Bar, který neexistuje
-                .grid__unit.grid__unit--1
-                    ul.social
+            .grid__wrapper
+                .grid__unit.grid__unit--1.grid__unit.grid__unit--sm-1-3
+                    img.footer__logo(data-src='./img/logo-red.png', alt='Slast', onload='lzld(this)', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
+                .grid__unit.grid__unit--1.grid__unit.grid__unit--sm-2-3
+                    ul.navigation__list.navigation__list--footer
+                        li.navigation__item
+                            a(href='#koktejl').navigation__link koktejl
+                        li.navigation__item
+                            a(href='#farec').navigation__link farec
+                        li.navigation__item
+                            a(href='#art').navigation__link art
+                    ul.social.social--footer
                         li.social__item
                             a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
                             .sr-only Facebook
                         li.social__item
                             a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
                             .sr-only Instagram
-                img.slast(src='./img/slast-footer.gif', alt='Slast')
-                .align-center
-                    a.utility-link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
+            img.slast(src='./img/slast-footer.gif', alt='Slast')
+            .align-center.footer__wrapper
+                span.footer__text Slast s.r.o., Brno IČO 07219911 / Zelný trh 293/10, Brno-město, PSČ 602 00 / IČO 06177786 / C 106947 vedená u Krajského soudu v Brně 
+                a.footer__link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
 

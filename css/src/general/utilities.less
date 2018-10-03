@@ -54,6 +54,10 @@ img {
   display: block;
 }
 
+.relative {
+  position: relative;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5em;
@@ -82,13 +86,15 @@ strong {
   width: 100%;
   position: relative;
   top: -8px;
+  z-index: 5;
+  margin: 0 auto;
 }
 
 .slast {
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: 1024px) {
-    margin: 32px 0 0;
+    margin: 32px auto 0;
   }
 }
 
@@ -99,12 +105,6 @@ strong {
   }
 }
 
-a.utility-link {
-  color: #606060;
-  padding: 12px 0;
-  display: inline-block;
-}
-
 img[data-src] {
   opacity: 0;
 }
@@ -112,4 +112,13 @@ img[data-src] {
 img[data-src][data-lzled="true"] {
   opacity: 1;
   transition: opacity 0.5s;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.utilities-layer-3 {
+  position: relative;
+  z-index: 3;
 }
