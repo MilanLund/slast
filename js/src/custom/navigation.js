@@ -19,6 +19,7 @@
       var $that = $(this);
       if($that.attr('data-src')) {
         $that.attr('src', $that.attr('data-src'));
+        $that.removeAttr('data-src');
       }
     });
 
