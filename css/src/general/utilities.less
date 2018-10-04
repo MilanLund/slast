@@ -109,8 +109,13 @@ img[data-src] {
   opacity: 0;
 }
 
-img[data-src][data-lzled="true"] {
+img[data-src][data-opacity="full"] {
   opacity: 1;
+  transition: opacity 0.5s;
+}
+
+img[data-src][data-opacity="half"] {
+  opacity: .5;
   transition: opacity 0.5s;
 }
 
