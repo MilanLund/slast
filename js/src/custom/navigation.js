@@ -21,9 +21,13 @@
         $that.attr('src', $that.attr('data-src'));
       }
     });
-    $(window).scrollTo($(this).attr('href'), 250, {
-      offset: 0
-    });
+
+    setTimeout(function () {
+      $(window).scrollTo($(this).attr('href'), 250, {
+        offset: 0
+      });
+    }, 100);
+    
     $nav.removeClass('navigation__list--active');
     $trigger.removeClass('navigation__trigger--active');
   });
