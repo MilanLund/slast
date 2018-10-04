@@ -42,8 +42,11 @@
         color: #fff;
         border: 1px solid #fff;
         width: 100%;
-        display: block;
         padding: 8px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
         @media (min-width: 1024px) {
             font-size: 24px;
@@ -65,7 +68,11 @@
             font-style: italic;
             background-color: #ff3500;
             border-color: #ff3500;
-		}
+        }
+        
+        &--small-text {
+            font-size: 17px;
+        }
 
 	}
 

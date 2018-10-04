@@ -10,14 +10,16 @@
         padding: 4px 0 0;
         display: inline-block;
         margin: 0 6px;
-
+        
         &:first-child {
             margin: 0 6px 0 0;
         }
 
-        &:last-child {
-            margin: 0 0 0 6px;
-        }
+        &:not(.social__item--heading) {
+            &:last-child {
+                margin: 0 0 0 6px;
+            }
+        }  
     }
 
     &--footer {

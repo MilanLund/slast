@@ -20,10 +20,10 @@ block content
                 li.navigation__social
                     ul.social.social--nav.align-center
                         li.social__item
-                            a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                            a.social__link.social__link--fb(href='https://www.facebook.com/Slast-1191882437603657/', target='_blank')
                             .sr-only Facebook
                         li.social__item
-                            a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                            a.social__link.social__link--ig(href='https://www.instagram.com/slast.bar/', target='_blank')
                             .sr-only Instagram
         section.heading
             .grid
@@ -46,16 +46,19 @@ block content
                                 strong Enjoy.
                             .grid__wrapper.grid__wrapper--inner
                                 .grid__unit.grid__unit--1.grid__unit--sm-2-3
-                                    p.heading__note Otevřeno každý den od 16.00 do 01.00
-                                    a(href='https://www.google.cz/maps/place/Zeln%C3%BD+trh+293%2F10,+602+00+Brno-st%C5%99ed-Brno-m%C4%9Bsto/@49.1920769,16.6055518,17z/data=!3m1!4b1!4m5!3m4!1s0x47129456b40d075d:0x14b17b7c66cefe9b!8m2!3d49.1920769!4d16.6077405', target='_blank').heading__note-link Zelný trh 10
-                                    p.heading__note Máme zkušební provoz – přijďte!
+                                    .heading__note-wrapper
+                                        a(href='https://www.google.cz/maps/place/Zeln%C3%BD+trh+293%2F10,+602+00+Brno-st%C5%99ed-Brno-m%C4%9Bsto/@49.1920769,16.6055518,17z/data=!3m1!4b1!4m5!3m4!1s0x47129456b40d075d:0x14b17b7c66cefe9b!8m2!3d49.1920769!4d16.6077405', target='_blank').heading__note-link Zelný trh 10
+                                        a(href='mailto:rezervace@slast.bar').heading__note-link rezervace@slast.bar
+                                        p.heading__note Všechno už dokončujeme!
+                                        p.heading__note.heading__note--top-space Chcete zažít Slast jako první? 
+                                            a(href='#mail').heading__note-link Nechte nám svůj mail. 
                                 .grid__unit.grid__unit--1.grid__unit--sm-1-3
                                     ul.social
-                                        li.social__item
-                                            a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                                        li.social__item.social__item--heading
+                                            a.social__link.social__link--fb(href='https://www.facebook.com/Slast-1191882437603657/', target='_blank')
                                             .sr-only Facebook
-                                        li.social__item
-                                            a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                                        li.social__item.social__item--heading
+                                            a.social__link.social__link--ig(href='https://www.instagram.com/slast.bar/', target='_blank')
                                             .sr-only Instagram
         section.content#koktejl
             .grid
@@ -72,9 +75,9 @@ block content
                                 | . Nechceme Vás opít. Chceme, aby Vás zaplavily chutě, které jste ještě nepoznali – a které jdou krásně dohromady (třeba) s našimi dýmkami. 
                             ul.selection(data-selection='koktejl')
                                 li.selection__item
-                                    a(href='#koktejly').selection__link koktejly
+                                    a(href='#koktejly').selection__link Koktejly
                                 li.selection__item
-                                    a(href='#zazracna').selection__link Zázračná
+                                    a(href='#zazracna').selection__link.selection__link--small-text Zázračná &amp; shruby a fermentáty
                                 li.selection__item
                                     a(href='#panaky-pivo-vino').selection__link Panáky &amp; Pivo &amp; Víno
                                 li.selection__item
@@ -120,7 +123,7 @@ block content
                         .selected__content#cajove-klasiky
                             h4.selected__heading Čajové klasiky
                             div.selected__grid-wrapper
-                                p.selected__p Ať už bylo po páté, nebo ještě ne – čas na čaj a čas na drink se právě spojili v jeden dokonalý moment. Doporučujeme pro všechny “ladies and gentlemen”!
+                                p.selected__p Ať už bylo po páté, nebo ještě ne – čas na čaj a čas na drink se právě spojily v jeden dokonalý moment. Doporučujeme pro všechny “ladies and gentlemen”!
                             ul.selected__list
                                 li.selected__item
                                     i 5 O’Clock Fashioned
@@ -218,15 +221,28 @@ block content
                                 p.selected__p Art do veřejného prostoru patří – a proto patří i do Slasti. Ale patří i k lidem domů, aspoň k těm, co ho vážně milují. Proto Vám chceme dát možnost odnést si kousek slastného artu s sebou. Díla, která budou v jednotlivých místnostech Slasti, budou po skončení výstav určená k dražbě nebo přímému prodeji. Zatím přesně nevíme, jak to celé udělat. Docela nás nadchla myšlenka dlouhodobé online aukce, kde můžete přihazovat na mobilu přes QR kód třeba rovnou při kouření farce. O něco míň sexy variantou je cesta „kup teď”. Jednoduše si svůj art vyhlédnete a rezervujete si ho předem. Ale jak říkáme - je to pro nás nová věc, takže se od Vás rádi necháme inspirovat. Takže pokud máte nějaký nápad/podnět/názor, sem s ním!
         footer.footer
             .grid.grid--footer
-                .grid__wrapper
-                    .grid__unit.grid__unit--1
-                        ul.social.align-center
-                            li.social__item
-                                a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
-                                .sr-only Facebook
-                            li.social__item
-                                a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
-                                .sr-only Instagram
+                .form#mail
+                    .grid__wrapper.grid__wrapper--center-items
+                        .grid__unit.grid__unit--1.grid__unit--md-2-3
+                                .form__wrapper
+                                    h2.form__heading Chcete zažít Slast jako první, 
+                                        br
+                                        | nebo třeba ochutnat koktejly a farce?
+                                    p.form__p Nechte nám tady svůj mail a dozvíte se všechno z první ruky!
+                                    .form__panel
+                                        label Jméno
+                                        input(type="text", placeholder="Jméno")
+                                        label Email
+                                        input(type="text", placeholder="Email")
+                                        .f-checkbox
+                                            #p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_ncposobniudaje.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                span.CheckBoxField.checkbox
+                                                input#p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_checkbox(type='checkbox', name='p$lt$ctl02$pageplaceholder$p$lt$ctl04$On_lineForm$plcUp$viewBiz$OsobniUdaje$checkbox')
+                                                label(for='p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_checkbox')  
+                                            label#p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_lb.EditingFormLabel(for='p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_checkbox')
+                                                | Souhlasím se 
+                                                a(href='/zpracovani-osobnich-udaju', target='_blank') zpracováním osobních údajů
+                                        input(type="submit", value="Odeslat")
                 .grid__wrapper
                     .grid__unit.grid__unit--1
                         ul.logos     
@@ -249,7 +265,7 @@ block content
                                 a.logos__link.logos__link--na-brno-dobry(href='https://www.instagram.com/na_brno_dobry/', target='_blank')
                                 .sr-only Na Brno dobrý
                             li.logos__item
-                                .logos__link.logos__link--mluvici-hlavy
+                                a.logos__link.logos__link--mluvici-hlavy(href='https://www.mluvicihlavy.cz/', target='_blank')
                                 .sr-only Mluvící hlavy
                             li.logos__item
                                 a.logos__link.logos__link--turbomost(href='https://www.turbomost.cz/', target='_blank')
@@ -276,10 +292,10 @@ block content
                             a(href='#art').navigation__link art
                     ul.social.social--footer
                         li.social__item
-                            a.social__link.social__link--fb(href='https://www.facebook.com/', target='_blank')
+                            a.social__link.social__link--fb(href='https://www.facebook.com/Slast-1191882437603657/', target='_blank')
                             .sr-only Facebook
                         li.social__item
-                            a.social__link.social__link--ig(href='https://www.instagram.com/', target='_blank')
+                            a.social__link.social__link--ig(href='https://www.instagram.com/slast.bar/', target='_blank')
                             .sr-only Instagram
             img.slast(src='./img/slast-footer.gif', alt='Slast')
             .align-center.footer__wrapper
