@@ -15,7 +15,13 @@
   });
 
   $('[href*="#"]:not([href*="#nav"], .selection__link)').on('click', function () {
-    $(window).scrollTo($(this).attr('href'), 200, {
+    $('img').each(function () {
+      var $that = $(this);
+      if($that.attr('data-src')) {
+        $that.attr('src', $that.attr('data-src'));
+      }
+    });
+    $(window).scrollTo($(this).attr('href'), 250, {
       offset: 0
     });
     $nav.removeClass('navigation__list--active');
