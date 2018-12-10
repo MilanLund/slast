@@ -1,0 +1,56 @@
+extends includes/layout.pug
+block content
+    section.content
+        .grid
+            .grid__wrapper
+                .grid__unit.grid__unit--1
+                    .logo-art.logo-art--author
+                        img.logo-art__bg(src='./img/interior.jpg', alt='Andrej')
+                        .logo-art__wrap.logo-art__wrap--logo.logo-art__wrap--small
+                            img.logo-art__img.logo-art__img--small(src='./img/logo-art.png', alt='Slast')
+                            .logo-art__stripe.logo-art__stripe--small
+                                h1.sr-only Slast
+                                | art.
+                        .logo-art__content
+                            .logo-art__left
+                                .logo-art__name Hana Linhartová
+                            .logo-art__right
+                                p.content__paragraph 
+                                    strong Vystavující ve Slasti: 11/2019 &ndash; 05/2019
+                                p.content__paragraph Hana vystudovala střední grafickou školuv Jihlavě a odnesla si magisterský titul z ateliéru Malba 2 ak.mal. Martina Mainera na brněnské FaVU. Její pojetí malby je klasické, až archetypální: “Stejně jako je tomu u jeskynních maleb, hovořím i já ve svých malbách jazykem symbolů, nepracuji konceptuálně, spíš zachycuji obrazy, kterých si v každodennosti všimnu, nebo symbolickým způsobem zachytím svůj duševní stav, jako je to například v malbě "tygr”. 
+                                a.content__link(href='#author') číst více
+            .grid__wrapper
+                .grid__unit.grid__unit--1
+                    .list-art.list-art--piece
+                        h2.list-art__h2 Vyberte si dílo
+                        ul.list-art__list
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Lotosový květ
+                                    br 
+                                    | 12000 Kč
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+            .grid__wrapper#author
+                .grid__unit.grid__unit--1.grid__unit.grid__unit--sm-3-4
+                    h2.content__h2 Více o autorovi
+                    p.content__paragraph Hana vystudovala střední grafickou školuv Jihlavě a odnesla si magisterský titul z ateliéru Malba 2 ak.mal. Martina Mainera na brněnské FaVU. Její pojetí malby je klasické, až archetypální: “Stejně jako je tomu u jeskynních maleb, hovořím i já ve svých malbách jazykem symbolů, nepracuji konceptuálně, spíš zachycuji obrazy, kterých si v každodennosti všimnu, nebo symbolickým způsobem zachytím svůj duševní stav, jako je to například v malbě "tygr”. Jsou to mé osobní příběhy, malá zastavení, zaujetí,  vzkazy... Jsem fascinovaná univerzálním jazykem symbolů, které ač jsou vytaženy z osobního prožitku, mají schopnost mluvit k širokému okruhu obecenstva…”
+                    p.content__paragraph V současné době se Hana věnuje vedení ateliéru Malování kreslení Brno, kde pořádá kurzy pro děti i dospělé a vede taky malou kavárnu Café Ateliér. V minulosti již spoluzaložila a vedla kavárnu Zastávka. Svou vlastní tvorbu prezentuje na různých samostatných výstavách již od roku 2002. Výmalba místnosti ve Slasti není její první spoluprácí s týmem Lidi z Baru: “V posledních letech jsem se podílela na výtvarném zpracování vývěsního štítu pro Bar, který neexistuje, malbách v interiéru v baru Super panda cirkus, i na malovaných štítech na vánoční trhy…”
+            .footer
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        .footer__art
+                            img.footer__logo(src="./img/logo-red.png")
+                            a(href='/') přejít na hlavní web Slasti
+                img.slast(alt='Slast', src='./img/slast-footer.gif')
+                .align-center.footer__wrapper
+                    span.footer__text Slast s.r.o., Brno IČO 07219911 / Zelný trh 293/10, Brno-město, PSČ 602 00 / IČO 06177786 / C 106947 vedená u Krajského soudu v Brně 
+                    a.footer__link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
+

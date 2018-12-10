@@ -40,6 +40,10 @@
 		&--narrow {
 			max-width: 470px;
 		}
+
+		strong {
+			font-weight: 700;
+		}
 	}
 
 	&__h2 {
@@ -141,6 +145,25 @@
 					width: 150%;
 				}
 			}
+		}
+	}
+
+	&__link {
+		position: relative;
+		z-index: 1000;
+		font-family: 'Greta Sans Ext', sans-serif;
+		font-weight: 900;
+		color: #fff;
+		text-decoration: underline;
+		display: block;
+		padding: 0 0 2em;
+
+		@media (min-width: 480px) {
+			padding: 0 0 4em;
+		}
+
+		&:hover, &:active {
+			text-decoration: underline;
 		}
 	}
 }

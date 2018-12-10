@@ -1,0 +1,45 @@
+extends includes/layout.pug
+block content
+    section.content
+        .grid
+            .grid__wrapper
+                .grid__unit.grid__unit--1
+                    .logo-art
+                        img.logo-art__bg(src='./img/andrej-art.jpg', alt='Andrej')
+                        .logo-art__wrap.logo-art__wrap--logo
+                            img.logo-art__img(src='./img/logo-art.png', alt='Slast')
+                            .logo-art__stripe 
+                                h1.sr-only Slast
+                                | art.
+                        .logo-art__wrap
+                            p.content__paragraph Slast je farec, Slast je koktejl, ale taky ART - umělecká sekce našeho labyrintu je pro nás plnokrevnou třetinou celého zážitku. Stejně jako zbytek Slasti je i tato část hodně o svobodě. Náš kurátor a jeden ze stvořitelů celého místa, Andrej Vališ, nechal umělce každého zpracovat jednu místnost. Dostali naprostou volnost a každý si s ní poradil po svém. Ostatně, každý z našich umělců a umělkyň je silná a originální osobnost a všichni se od sebe dost liší. 
+                            p.content__paragraph Vystavená díla jsou všechna určená k prodeji. Ve Slasti budou viset (či ležet, stát a podobně) po dobu cca 6 měsíců. Zakoupit si je ale můžete už teď. Doporučujeme je vidět naživo ve Slasti, kde mají největší šťávu, ale prohlédnout si je – nebo rovnou pořídit domů – můžete i přímo tady.
+            .grid__wrapper
+                .grid__unit.grid__unit--1
+                    .list-art
+                        h2.list-art__h2 Vyberte si autora
+                        p.list-art__subheading Vystavující od 11/2018 do 05/2019
+                        ul.list-art__list
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+                            li.list-art__item
+                                a.list-art__link(href='', style='background-image:url("")')
+                                    | Hana Hrušková
+            .footer
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        .footer__art
+                            img.footer__logo(src="./img/logo-red.png")
+                            a(href='/') přejít na hlavní web Slasti
+                img.slast(alt='Slast', src='./img/slast-footer.gif')
+                .align-center.footer__wrapper
+                    span.footer__text Slast s.r.o., Brno IČO 07219911 / Zelný trh 293/10, Brno-město, PSČ 602 00 / IČO 06177786 / C 106947 vedená u Krajského soudu v Brně 
+                    a.footer__link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
+
