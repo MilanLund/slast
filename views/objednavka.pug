@@ -1,0 +1,62 @@
+extends includes/layout.pug
+block content
+    main(id='main')
+        section.content
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        .logo-art.logo-art--author
+                            img.logo-art__bg(src='./img/interior.jpg', alt='Andrej')
+                            .logo-art__wrap.logo-art__wrap--logo.logo-art__wrap--small
+                                img.logo-art__img.logo-art__img--small(src='./img/logo-art.png', alt='Slast')
+                                .logo-art__stripe.logo-art__stripe--small
+                                    h1.sr-only Slast
+                                    | art.
+                            .logo-art__content
+                                .logo-art__left
+                                    .logo-art__name Objednávka
+                                .logo-art__right
+                                    p.content__paragraph Autor: 
+                                        a(href='#') Hana Linhartová
+                                        br
+                                        | Dílo:   
+                                        a(href='#') Název díla 
+                                        br
+                                        | Vystavující ve Slasti: 11/2019 &ndash; 05/2019
+                                    p.content__price Cena: 45 000 Kč
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        .list-art.list-art--piece
+                            h2.list-art__h2.list-art__h2--form Objednávkový formulář
+                            .form-order
+                                label Jméno a příjemní
+                                input(type='text')
+                                label Email
+                                input(type='email')
+                                label Telefon
+                                input(type='text')
+                                .hide#art-order
+                                    input(type='text')
+                                label Poznámka
+                                textarea
+                                .f-checkbox
+                                    #p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_ncposobniudaje.EditingFormControlNestedControl.editing-form-control-nested-control
+                                        span.CheckBoxField.checkbox
+                                        input#p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_checkbox(type='checkbox', name='p$lt$WebPartZone1$ZoneA$wF$plcUp$viewBiz$OsobniUdaje$checkbox')
+                                        label(for='p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_checkbox')  
+                                    label#p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_checkbox')
+                                        | Souhlasím se 
+                                        a(href='/zpracovani-osobnich-udaju', target='_blank') zpracováním osobních údajů
+                                        |  a objednávám si dílo podle informací uvedených výše
+                                input(type='submit', value='Odeslat objednávku')
+                .footer
+                    .grid__wrapper
+                        .grid__unit.grid__unit--1
+                            .footer__art
+                                img.footer__logo(src="./img/logo-red.png")
+                                a(href='/') přejít na hlavní web Slasti
+                    img.slast(alt='Slast', src='./img/slast-footer.gif')
+                    .align-center.footer__wrapper
+                        span.footer__text Slast s.r.o., Brno IČO 07219911 / Zelný trh 293/10, Brno-město, PSČ 602 00 / IČO 06177786 / C 106947 vedená u Krajského soudu v Brně 
+                        a.footer__link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
+

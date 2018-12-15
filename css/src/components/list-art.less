@@ -5,7 +5,11 @@
     z-index: 1000;
     
     &--piece {
-        margin: 0 0 4em;
+        margin: 0 0 2em;
+
+        @media (min-width: 480px) {
+            margin: 0 0 4em;
+        }
     }
 
     @media (min-width: 480px) {
@@ -19,6 +23,15 @@
 
         @media (min-width: 480px) {
             font-size: 1.875em;
+        }
+
+        &--form {
+            text-align: center;
+            margin: 0 auto .875em;
+
+            @media (min-width: 480px) {
+                font-size: 2em;
+            }
         }
 	}
 

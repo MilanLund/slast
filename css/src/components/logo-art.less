@@ -129,8 +129,48 @@
         color: #fff;
         font-family: 'Greta Sans Ext', sans-serif;
         font-weight: 900;
-        font-size: 2.5em;
+        font-size: 1.75em;
         display: inline-block;
         margin: 1.25em .25em .5em 0;
+
+        @media (min-width: 768px) {
+            font-size: 2.5em;
+        }
+    }
+
+    &__button {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 1em;
+        font-family: 'Greta Sans Ext', sans-serif;
+        font-weight: 900;
+        color: #fff;
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 8px 36px;
+        background-color: #000;
+        margin: 0 auto;
+        cursor: pointer;
+        -webkit-appearance: none;
+        border-radius: 0;
+        margin: 0 0 1em;
+
+        @media (min-width: 1024px) {
+            font-size: 1.25em;
+        }
+
+        &:hover {
+            text-decoration: none;
+            background-color: #ff3500;
+            border-color: #ff3500;
+        }
+    }
+
+    &__price {
+        font-family: 'Greta Sans Ext', sans-serif;
+        color: #fff;
+        font-weight: 900;
+        padding: 2.5em 0 1em;
+        position: relative;
     }
 }

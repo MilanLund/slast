@@ -13,7 +13,7 @@
     <meta property="og:description" content="">
     <meta name="description" content="">
     <meta name="author" content="Lidi z Baru">
-    <link rel="stylesheet" href="./css/app.min.css?v=178808">
+    <link rel="stylesheet" href="./css/app.min.css?v=178807">
     <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
@@ -46,12 +46,11 @@
                 </div>
                 <div class="logo-art__content">
                   <div class="logo-art__left">
-                    <div class="logo-art__name">Jméno díla</div>
-                    <p class="logo-art__price">Cena: 45 000 Kč</p><a class="logo-art__button" href="#">Koupit</a>
+                    <div class="logo-art__name">Objednávka</div>
                   </div>
                   <div class="logo-art__right">
-                    <p class="content__paragraph">Autor: <a href="#">Hana Linhartová</a><br>Vystavující ve Slasti: 11/2019 &ndash; 05/2019</p>
-                    <p class="content__paragraph">Hana vystudovala střední grafickou školuv Jihlavě a odnesla si magisterský titul z ateliéru Malba 2 ak.mal. Martina Mainera na brněnské FaVU. Její pojetí malby je klasické, až archetypální: “Stejně jako je tomu u jeskynních maleb, hovořím i já ve svých malbách jazykem symbolů, nepracuji konceptuálně, spíš zachycuji obrazy, kterých si v každodennosti všimnu, nebo symbolickým způsobem zachytím svůj duševní stav, jako je to například v malbě "tygr”. </p>
+                    <p class="content__paragraph">Autor: <a href="#">Hana Linhartová</a><br>Dílo:   <a href="#">Název díla </a><br>Vystavující ve Slasti: 11/2019 &ndash; 05/2019</p>
+                    <p class="content__price">Cena: 45 000 Kč</p>
                   </div>
                 </div>
               </div>
@@ -59,13 +58,30 @@
           </div>
           <div class="grid__wrapper">
             <div class="grid__unit grid__unit--1">
-              <div class="list-art list-art--piece"><img class="list-art__picture" src="https://plchldr.co/i/1280x800?&amp;text=Obraz"></div>
-            </div>
-          </div>
-          <div class="grid__wrapper">
-            <div class="grid__unit grid__unit--1 grid__unit">
-              <h2 class="content__h2">Další díla autora</h2>
-              <div class="list-img"><a href="#"><img src="https://plchldr.co/i/320x240?&amp;text=Obraz"></a><a href="#"><img src="https://plchldr.co/i/320x240?&amp;text=Obraz"></a><a href="#"><img src="https://plchldr.co/i/320x240?&amp;text=Obraz"></a><a href="#"><img src="https://plchldr.co/i/320x240?&amp;text=Obraz"></a><a href="#"><img src="https://plchldr.co/i/320x240?&amp;text=Obraz"></a></div>
+              <div class="list-art list-art--piece">
+                <h2 class="list-art__h2 list-art__h2--form">Objednávkový formulář</h2>
+                <div class="form-order">
+                  <label>Jméno a příjemní</label>
+                  <input type="text">
+                  <label>Email</label>
+                  <input type="email">
+                  <label>Telefon</label>
+                  <input type="text">
+                  <div class="hide" id="art-order">
+                    <input type="text">
+                  </div>
+                  <label>Poznámka</label>
+                  <textarea></textarea>
+                  <div class="f-checkbox">
+                    <div class="EditingFormControlNestedControl editing-form-control-nested-control" id="p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_ncposobniudaje"><span class="CheckBoxField checkbox"></span>
+                      <input id="p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_checkbox" type="checkbox" name="p$lt$WebPartZone1$ZoneA$wF$plcUp$viewBiz$OsobniUdaje$checkbox">
+                      <label for="p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_checkbox"> </label>
+                    </div>
+                    <label class="EditingFormLabel" id="p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_lb" for="p_lt_WebPartZone1_ZoneA_wF_plcUp_viewBiz_OsobniUdaje_checkbox">Souhlasím se <a href="/zpracovani-osobnich-udaju" target="_blank">zpracováním osobních údajů</a> a objednávám si dílo podle informací uvedených výše</label>
+                  </div>
+                  <input type="submit" value="Odeslat objednávku">
+                </div>
+              </div>
             </div>
           </div>
           <div class="footer">

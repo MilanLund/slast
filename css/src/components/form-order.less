@@ -1,0 +1,132 @@
+.form-order {
+    max-width: 420px;
+    margin: 0 auto;
+
+    label {
+        display: block;
+        padding: 0 0 .125em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        display: block;
+        padding: .5em;
+        width: 100%;
+        font-size: 1.125em;
+        border: none;
+        border-radius: 0;
+        box-shadow: none; 
+        margin: 0 0 .75em;
+        box-sizing: border-box;
+        font-family: "Greta Sans", sans-serif;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    input[type="submit"] {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Greta Sans', sans-serif;
+        font-weight: 300;
+        color: #fff;
+        border: 1px solid #fff;
+        width: 100%;
+        padding: 8px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #000;
+        margin: 0 auto;
+        cursor: pointer;
+        -webkit-appearance: none;
+        border-radius: 0;
+
+        @media (min-width: 1024px) {
+            font-size: 24px;
+            padding: 10px 14px;
+        }
+        
+        @media (min-width: 1180px) {
+            font-size: 26px;
+		}
+
+        &:hover {
+            text-decoration: none;
+            background-color: #ff3500;
+            border-color: #ff3500;
+        }
+    }
+
+    .EditingFormControlNestedControl {
+        display: block;
+    }
+    .EditingFormErrorLabel,
+    .ErrorLabel {
+        color: #ff3500;
+        display: block;
+        padding: 0 0 .25em;
+    }
+    .EditingFormErrorLabel {
+        &:last-of-type {
+            padding: 0 0 1em;
+        }
+    }
+    .InfoLabel {
+        color: #fff;
+        font-size: 2em;
+        padding: .5em 0 1.5em;
+        display: block;
+    }
+    .f-checkbox {
+        margin: 0 0 1em;
+        clear: both;
+		display: table;
+		width: 100%;
+        text-align: left;
+        position: relative;
+    }
+    .box .f-checkbox {
+        margin: 6px 0 0;
+    }
+    .f-checkbox input[type="checkbox"] {
+		margin: 0 6px 0 0;
+		position: absolute;
+		top: 5px;
+
+		&:focus {
+			outline-color: #ff3500;
+		}
+	}
+    .f-checkbox .editing-form-control-nested-control label {
+        display: none;
+    }
+    .f-checkbox .editing-form-control-nested-control,
+    .f-checkbox .editing-form-control-nested-control+label {
+        display: block;
+		margin: 0;
+		position: static;
+        color: #fff;
+    }
+    .f-checkbox .editing-form-control-nested-control+label {
+        margin: 0 0 0 20px;
+    }
+	.f-checkbox a {
+		color: #fff;
+		text-decoration: underline;
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+    .f-checkbox .editing-form-control-nested-control+label+.EditingFormErrorLabel {
+        display: block;
+        clear: both;
+    }
+}
