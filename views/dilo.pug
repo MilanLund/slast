@@ -6,7 +6,6 @@ block content
                 .grid__wrapper
                     .grid__unit.grid__unit--1
                         .logo-art.logo-art--author
-                            img.logo-art__bg(src='./img/interior.jpg', alt='Andrej')
                             .logo-art__wrap.logo-art__wrap--logo.logo-art__wrap--small
                                 img.logo-art__img.logo-art__img--small(src='./img/logo-art.png', alt='Slast')
                                 .logo-art__stripe.logo-art__stripe--small
@@ -18,16 +17,50 @@ block content
                                     p.logo-art__price Cena: 45 000 Kč
                                     a(href='#').logo-art__button Koupit
                                 .logo-art__right
-                                    p.content__paragraph Autor: 
-                                        a(href='#') Hana Linhartová
+                                    p.content__paragraph
+                                        | Autor: 
+                                        a(href='/art/hana-hrusova') Hana Hrušová
                                         br
-                                        | Vystavující ve Slasti: 11/2019 &ndash; 05/2019
-                                    p.content__paragraph Hana vystudovala střední grafickou školuv Jihlavě a odnesla si magisterský titul z ateliéru Malba 2 ak.mal. Martina Mainera na brněnské FaVU. Její pojetí malby je klasické, až archetypální: “Stejně jako je tomu u jeskynních maleb, hovořím i já ve svých malbách jazykem symbolů, nepracuji konceptuálně, spíš zachycuji obrazy, kterých si v každodennosti všimnu, nebo symbolickým způsobem zachytím svůj duševní stav, jako je to například v malbě "tygr”. 
-                .grid__wrapper
+                                        | Vystavující ve Slasti: listopad 2018 – květen 2019
+                                        br
+                                        | Stav díla: Volné
+                                    p.content__price Cena: 12.000 Kč
+                                    h2.content__heading Mám zájem o dílo
+                                    .form-order
+                                        #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz
+                                            #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_pM_pMP
+                                            #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_pnlForm.FormPanel(onkeypress="javascript:return WebForm_FireDefaultButton(event, 'p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_btnOK')")
+                                                div(style='display:none')
+                                                    label#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Art_lb.EditingFormLabel(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Art_txtText') Dílo:
+                                                    #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpart.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                        input#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Art_txtText.form-control(name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$Art$txtText', type='text', value='https://www.slast.bar/art/hana-hrusova/lotosovy-kvet', maxlength='200', style='background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg=="); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;')
+                                                label#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Name_lb.EditingFormLabel(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Name_txtText') Jméno a příjmení:
+                                                #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpname.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                    input#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Name_txtText.form-control(name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$Name$txtText', type='text', maxlength='200')
+                                                label#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Phone_lb.EditingFormLabel(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Phone_txtText') Tel. číslo:
+                                                #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpphone.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                    input#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Phone_txtText.form-control(name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$Phone$txtText', type='text', maxlength='200')
+                                                label#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Email_lb.EditingFormLabel(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Email_txtText') E-mail:
+                                                #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpemail.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                    input#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Email_txtText.form-control(name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$Email$txtText', type='text', maxlength='200')
+                                                label#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Note_lb.EditingFormLabel(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Note_txtText') Poznámka:
+                                                #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpnote.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                    textarea#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_Note_txtText.form-control(name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$Note$txtText', rows='2', cols='20')
+                                                .f-checkbox
+                                                    #p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncposobniudaje.EditingFormControlNestedControl.editing-form-control-nested-control
+                                                        span.CheckBoxField.checkbox
+                                                            input#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_checkbox(type='checkbox', name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$OsobniUdaje$checkbox')
+                                                            label(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_checkbox')  
+                                                    label#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_lb.EditingFormLabel(for='p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_checkbox')
+                                                        | Souhlasím se 
+                                                        a(href='/zpracovani-osobnich-udaju', target='_blank') zpracováním osobních údajů
+                                                        | :
+                                                input#p_lt_ctl00_pageplaceholder_p_lt_WebPartZone1_ZoneA_wD_viewBiz_btnOK.FormButton.btn.btn-primary(type='submit', name='p$lt$ctl00$pageplaceholder$p$lt$WebPartZone1$ZoneA$wD$viewBiz$btnOK', value='Odeslat')
+                //.grid__wrapper
                     .grid__unit.grid__unit--1
                         .list-art.list-art--piece
                             img(src='https://plchldr.co/i/1280x800?&text=Obraz').list-art__picture
-                .grid__wrapper
+                //.grid__wrapper
                     .grid__unit.grid__unit--1.grid__unit
                         h2.content__h2 Další díla autora
                         .list-img
@@ -41,8 +74,8 @@ block content
                                 img(src='https://plchldr.co/i/320x240?&text=Obraz')
                             a(href='#')
                                 img(src='https://plchldr.co/i/320x240?&text=Obraz')
-                        
-                        
+
+
                 .footer
                     .grid__wrapper
                         .grid__unit.grid__unit--1
