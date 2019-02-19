@@ -9,6 +9,7 @@
 
     &__bg {      
         display: none;
+        z-index: -1;
 
         @media (min-width: 768px) {
             position: absolute;
@@ -118,6 +119,11 @@
         }
     }
 
+    &__left {
+        position: relative;
+        z-index: 50;
+    }
+
     &__content {
         @media (min-width: 768px) {
             display: flex;
@@ -172,5 +178,15 @@
         font-weight: 900;
         padding: 2.5em 0 1em;
         position: relative;
+    }
+
+    &__auth-img {
+        max-width: 100%;
+        margin: 0 0 2em 0;
+
+        @media (min-width: 768px) {
+            max-width: 90%;
+            margin: 0 1em 3em 0;
+        }
     }
 }
