@@ -2,7 +2,7 @@
     var $selectedAll = $('.selected'),
     $selectedAllContent = $selectedAll.find('.selected__content'),
     $selectedAllClose = $selectedAll.find('.selected__close'),
-    $links = $('.selection__link');
+    $links = $('.selection__link:not(.selection__link--page)');
 
     $selectedAll.hide();
     $selectedAllContent.hide();
