@@ -22,6 +22,10 @@
 			padding: 8% 0 4%;
 
 			@media (min-width: 568px) {
+				padding: 65% 0 16% 0;
+			}
+
+			@media (min-width: 1280px) {
 				padding: 78% 0 16% 0;
 			}
 		}
@@ -108,28 +112,57 @@
 
 	}
 
+	&__layer {
+		position: relative;
+		z-index: 200;
+	}
+
 	&__img {
 		min-height: 200px;
 
-		&--koktejl {
-			text-align: right;
-			width: 140%;
-			position: relative;
-			right: 40%; 
+		&--dymka {
 			z-index: 1;
-			
 
 			@media (min-width: 568px) {
-				width: 170%;
-				right: -10%;
+				width: 120%;
+				left: -100%;
 				top: 0;
 				position: absolute;
 			}
 
+			@media (min-width: 1024px) {
+				width: 85%;
+				top: -5%;
+			}
+
+			@media (min-width: 1280px) {
+				left: -78%;
+			}
+		}
+
+		&--koktejl {
+			text-align: right;
+			width: 100%;
+			position: relative;
+			right: 0; 
+			z-index: 1;
+			
+
+			@media (min-width: 568px) {
+				width: 120%;
+				right: 0;
+				top: 0;
+				position: absolute;
+			}
+
+			@media (min-width: 992px) {
+				width: 90%;
+			}
+
 			@media (min-width: 1180px) {
-				top: -17%;
-				width: 190%;
-				right: -20%;
+				top: -14%;
+				width: 105%;
+				right: -6%;
 			}
 		
 			img {
@@ -143,19 +176,18 @@
 
 		&--andrej {
 			position: relative;
-			left: -35%;
 
 			@media (min-width: 568px) {
-				left: -65%;
+				left: -50%;
 			}
 
 			@media (min-width: 896px) {
-				left: -35%;
+				left: -18%;
 			}
 		
 			img {
 				display: inline-block;
-				width: 160%;
+				width: 100%;
 				max-width: none;
 
 				@media (min-width: 568px) {
@@ -163,7 +195,7 @@
 				}
 
 				@media (min-width: 896px) {
-					width: 150%;
+					width: 130%;
 				}
 			}
 		}
