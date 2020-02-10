@@ -1,0 +1,58 @@
+extends includes/layout.pug
+block content
+    main(id='main')
+        nav.navigation#navigation
+            .navigation__logo
+                img(src='./img/logo2020.png', alt='Slast')
+        section.content
+            .grid
+                .grid__wrapper.grid__wrapper--center-items
+                    .grid__unit.grid__unit--1.grid__unit--md-2-3.align-center
+                        h1.res__h1 Rezervuj si svou Slast
+                        p.res__p Jistota je jistota, tak si svá místa raději pojistěte, obzvlášť chystáte-li se k nám v páteční či sobotní večer. Rezervace přijímáme nejpozději na 21:00 a pokud si přejete sedět vedle svého oblíbeného obrazu nebo vám máme na příchod nachystat welcome drink, nezapomeňte nám to připsat do poznámky. A důležité info na závěr – 
+                            strong počkejte prosím, až vám rezervaci potvrdíme e-mailem
+                            | . Díky a těšíme se!
+                        .form-order.res__form.align-left
+                            #p_lt_WebPartZone1_ZoneA_wD_viewBiz
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_pM_pMP
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_pnlForm.FormPanel(onkeypress="javascript:return WebForm_FireDefaultButton(event, 'p_lt_WebPartZone1_ZoneA_wD_viewBiz_btnOK')")
+                                label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Date_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_Date_txtText') Kdy v&aacute;s m&uring;&zcaron;eme o&ccaron;ek&aacute;vat?
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpdate.EditingFormControlNestedControl.editing-form-control-nested-control
+                                    input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Date_txtText.form-control(name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$Date$txtText' type='text' maxlength='200').dp
+                                label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_NumPeople_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_NumPeople_txtText') Koliv v&aacute;s bude?
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpnumpeople.EditingFormControlNestedControl.editing-form-control-nested-control
+                                    input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_NumPeople_txtText.form-control(name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$NumPeople$txtText' type='text' maxlength='200')
+                                label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Name_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_Name_txtText') Jm&eacute;no a p&rcaron;&iacute;jmen&iacute;
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpname.EditingFormControlNestedControl.editing-form-control-nested-control
+                                    input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Name_txtText.form-control(name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$Name$txtText' type='text' maxlength='200')
+                                label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Phone_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_Phone_txtText') Telefonn&iacute; kontakt
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpphone.EditingFormControlNestedControl.editing-form-control-nested-control
+                                    input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Phone_txtText.form-control(name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$Phone$txtText' type='text' maxlength='200')
+                                label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Email_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_Email_txtEmailInput') E-mail
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpemail.EditingFormControlNestedControl.editing-form-control-nested-control
+                                    input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Email_txtEmailInput.form-control(name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$Email$txtEmailInput' type='text' maxlength='100')
+                                label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Note_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_Note_txtText') Pozn&aacute;mka
+                                #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncpnote.EditingFormControlNestedControl.editing-form-control-nested-control
+                                    textarea#p_lt_WebPartZone1_ZoneA_wD_viewBiz_Note_txtText.form-control(name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$Note$txtText' rows='2' cols='20')
+                                .f-checkbox
+                                    #p_lt_WebPartZone1_ZoneA_wD_viewBiz_ncposobniudaje.EditingFormControlNestedControl.editing-form-control-nested-control
+                                        span.CheckBoxField.checkbox
+                                        input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_checkbox(type='checkbox' name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$OsobniUdaje$checkbox')
+                                        label(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_checkbox') &nbsp;
+                                    label#p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_lb.EditingFormLabel(for='p_lt_WebPartZone1_ZoneA_wD_viewBiz_OsobniUdaje_checkbox')
+                                        | Souhlas&iacute;m se 
+                                        a(href='/zpracovani-osobnich-udaju' target='_blank') zpracov&aacute;n&iacute;m osobn&iacute;ch &uacute;daj&uring;
+
+                                input#p_lt_WebPartZone1_ZoneA_wD_viewBiz_btnOK.FormButton.btn.btn-primary(type='submit' name='p$lt$WebPartZone1$ZoneA$wD$viewBiz$btnOK' value='Odeslat')
+
+                .footer
+                    .grid__wrapper
+                        .grid__unit.grid__unit--1
+                            .footer__art
+                                img.footer__logo(src="./img/logo-red.png")
+                                a(href='/') přejít na hlavní web Slasti
+                    img.slast(alt='Slast', src='./img/slast-footer.gif')
+                    .align-center.footer__wrapper
+                        span.footer__text Slast s.r.o., Brno IČO 07219911 / Zelný trh 293/10, Brno-město, PSČ 602 00 / IČO 06177786 / C 106947 vedená u Krajského soudu v Brně 
+                        a.footer__link(href='https://www.kentico.com', title='Kentico', rel='nofollow', target='_blank') Powered by Kentico CMS
+

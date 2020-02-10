@@ -3,7 +3,7 @@ block content
     main(id='main')
         nav.navigation#navigation
             .navigation__logo
-                img(src='./img/logo.png', alt='Slast')
+                img(src='./img/logo2020.png', alt='Slast')
             a(href='#nav').navigation__trigger 
                 .sr-only Menu
             ul.navigation__list#nav
@@ -36,22 +36,24 @@ block content
                                 span.heading__title-positioned Svoboda je
                                 span.sr-only Slast
                             p.heading__paragraph
-                                | Ať už jste o Slasti někdy slyšeli nebo ne – teď budete trochu šokováni. 
-                                strong SLAST 1.0 
-                                | měla totiž být 
-                                i „vibe dining” 
-                                | podnik, kde se hoduje u nejvybranějšího jídla a zároveň tančí na stolech. Postupem času nám ale došlo, že se význam slova „slast” na fancy talířky jednoduše nevleze. Proto 
-                                strong SLAST 2.0 
-                                | – žádná kuchyně, žádné přeleštěné stolky, ale labyrint rozkoší ukrytých v každém koutku inspirativního lounge baru. Koktejl v ruce, farec na stole, art (nejen) na stěně a široko daleko nikdo, kdo by Vám říkal, jak se máte chovat. 
-                                strong Enjoy.
+                                | Nestačí si něco užívat – člověk musí být zaplavený rozkoší až po uši, aby tomu začal říkal 
+                                i „slast”
+                                | . Slast totiž není jen tak obyčejný pocit.
+                                br
+                                | A přesně o to nám jde. O komplexní zážitek. Slast není jen farec, Slast není jen koktejl, nebo art. Slast je tohle všechno dohromady. Farce na míru každému a párované drinky k tomu, 
+                                i „bottle” 
+                                | service pro větší skupiny, art jako doplněk k vychytaným parties s DJ, exotické a originální jídlo jako třešinka na gurmánském dortu. 
+                                br
+                                strong Nechte se hýčkat – nechte se zaplavit Slastí!
                             .grid__wrapper.grid__wrapper--inner
                                 .grid__unit.grid__unit--1.grid__unit--sm-2-3
                                     .heading__note-wrapper
                                         a(href='https://www.google.cz/maps/place/Zeln%C3%BD+trh+293%2F10,+602+00+Brno-st%C5%99ed-Brno-m%C4%9Bsto/@49.1920769,16.6055518,17z/data=!3m1!4b1!4m5!3m4!1s0x47129456b40d075d:0x14b17b7c66cefe9b!8m2!3d49.1920769!4d16.6077405', target='_blank').heading__note-link Zelný trh 10
-                                        a(href='mailto:rezervace@slast.bar').heading__note-link rezervace@slast.bar
-                                        p.heading__note Všechno už dokončujeme!
-                                        p.heading__note.heading__note--top-space Chcete zažít Slast jako první? 
-                                            a(href='#mail').heading__note-link Nechte nám svůj mail. 
+                                        a(href='tel:+420773797540').heading__note-link tel. číslo 773 797 540
+                                        p.heading__note.heading__note--top-space Máme otevřeno každý den
+                                        p.heading__note od 16.00 do 1.00
+                                        p.heading__note pátek a sobota do 2.00
+                                        a(href='/rezervace').heading__note-btn Rezervace
                                 .grid__unit.grid__unit--1.grid__unit--sm-1-3
                                     ul.social
                                         li.social__item.social__item--heading
@@ -66,22 +68,18 @@ block content
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2
                         .content__wrapper
                             h2.content__h2 koktejl
-                            h3.content__h3 Každý má svou SLAST – nikomu neříkáme, co má být ta jeho.
+                            h3.content__h3 Na naše koktejly jsme patřičně hrdí – jsou to opravdové superstars.
                             p.content__paragraph.content__paragraph--narrow
-                                | Koktejly děláme už nějaký ten pátek a umíme je na 1000 způsobů. Teď ale přidáváme 1000+1! Slastný trademark se jmenuje 
-                                i „low alko a nealko” 
-                                | aneb 
-                                i “aby sis to mohl užít, nemusíš být namol”
-                                | . Nechceme Vás opít. Chceme, aby Vás zaplavily chutě, které jste ještě nepoznali – a které jdou krásně dohromady třeba s našimi farci. 
+                                | Zároveň věříme, že nejlíp vyzní jako součást týmové hry. Milujeme párování drinků s různými farci a jsme schopní zářidit jakýkoli typ chuťového zážitku si přejete, nebojte se nás zeptat. A pokud zrovna slavíte a nejste na to sami, zkuste naše farec&bottled cocktail servisy – ideální párty sady, doladěné do nejmenších detailů.
                             ul.selection(data-selection='koktejl')
                                 li.selection__item
                                     a(href='#koktejly').selection__link Koktejly
                                 li.selection__item
-                                    a(href='#zazracna').selection__link.selection__link--small-text Zázračná &amp; shruby a fermentáty
+                                    a(href='#nealko').selection__link Nealko
                                 li.selection__item
                                     a(href='#panaky-pivo-vino').selection__link Panáky &amp; Pivo &amp; Víno
                                 li.selection__item
-                                    a(href='#cajove-klasiky').selection__link Čajové klasiky
+                                    a(href='#jidlo').selection__link Slastné jídlo
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2.relative
                         .content__img.content__img--koktejl
                             img(data-src='./img/drinky.jpg', alt='Drinky', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
@@ -92,87 +90,119 @@ block content
                 .grid__wrapper
                     .grid__unit.grid__unit--1
                         .selected__content#koktejly
-                            h4.selected__heading Zázračné Highbally
-                            div.selected__grid-wrapper
-                                p.selected__p Osm lehoučce opojných krasavců a krasavic, ideálních třeba k farci. Aby se Vám hlava motala tak akorát!
+                            h4.selected__heading.selected__heading--small K farcům softovým, svěžím a nekomplikovaným
                             ul.selected__list
                                 li.selected__item
-                                    i Bittersweet Story
-                                    span Kdo by v mandli hledal pecku z medu? Hořkosladké, krásné překvápko!
+                                    i Good nighT kitty
+                                    span Gin s tonikem z ananasové chatrče. Popinka na dobrou noc! 
                                 li.selected__item
-                                    i Top Fun 
-                                    span Topová popina! Liči sladkost, celerová suchost a tequila to rozsekne.
+                                    i Madonin (sezónní) plápolák
+                                    span Hříšná kombinace třešní, citrónu a třtiny. Zaručené vzrušení!
                                 li.selected__item
-                                    i Mighty McKumquat 
-                                    span Citrusové kombo kumkvátu a limetky, vystřelené do stratosféry raketovou vodkou.
+                                    i Pedro Valderon de la Barca
+                                    span Rooibosový mystik věštící z manga. Osudové setkání!
                                 li.selected__item
-                                    i Double B 
-                                    span Všechno co je od Bé, je dobré – jako třeba banán a Becher!
+                                    i Střecha světa 
+                                    span Bylinná výprava na hořký masiv. Duchovní zážitek!
                                 li.selected__item
-                                    i Just Another Morning Coke
-                                    span Ranní refresh jak z příručky správného bohéma. Cola, gin a grepová rána pod pás.
-                                li.selected__item
-                                    i Banana Guerilla 
-                                    span Líbivý banánek na rande s latino rumovou krasavicí – a kořeněné finále v džungli.
-                                li.selected__item
-                                    i Teddy Bear Red Label
-                                    span Když na medvídka Pú přijde smutek, přidá si do medu trochu whiskey.
-                                li.selected__item
-                                    i Merry Peary
-                                    span Vánoční sen o hruškovici, co zabloudila do svařáku, a našla tam perník.
-                        .selected__content#cajove-klasiky
-                            h4.selected__heading Čajové klasiky
-                            div.selected__grid-wrapper
-                                p.selected__p Ať už bylo po páté, nebo ještě ne – čas na čaj a čas na drink se právě spojily v jeden dokonalý moment. Doporučujeme pro všechny “ladies and gentlemen”!
+                                    i Pražská kavárna
+                                    span Espressotonik jak od babičky z Prahy. Zaručeně vystřelí z trenek!
+
+                            h4.selected__heading.selected__heading--small K farcům těžším, zajímavým, kořeněným
                             ul.selected__list
                                 li.selected__item
-                                    i 5 O’Clock Fashioned
-                                    span Klasika všech klasik, posílená červeným čajem – jasná a čistá!
+                                    i Tvoje máma
+                                    span Máma s dredy vonící kokosovým mlékem, stále svěží a milá. Pozor, je i přísná!
                                 li.selected__item
-                                    i Top of the Bookshelf Manhattan
-                                    span Na úplně nejvrchnější poličce nejstarší oxfordské knihovny leží přesně tenhle Manhatan – moudrý whiskový klenot.
+                                    i Richard Beer
+                                    span Hořkosladký smích pivních břichů v sudech po whisky. Vlhký sen každého pivaře!
                                 li.selected__item
-                                    i Nepaloni
-                                    span Návrat z horolezecké výpravy do Nepálu – trochu hořký, trochu sladký, ale hodně dobrý.
+                                    i Hořící Vilcabamba
+                                    span Indiánská vatra ze suchého vína, třešní a skořicovým kouřem. Jasný signál!
                                 li.selected__item
-                                    i Choco Fumarita
-                                    span Nakouřená čoko variace na mexický národní poklad.
+                                    i Olgoj chorchoj
+                                    span Uzený červík na medu a citrónu. Latinský temperament!
                                 li.selected__item
-                                    i Speed of Light
-                                    span Lehce kyselá, bezová coververze hitu zvaného gimlet.
+                                    i Zazvoril cogniec
+                                    span Koňak se Zázvorem v pikantní pohádce pro dospělé. Zahřeje i Tam dole!
+
+                            h4.selected__heading.selected__heading--small K farcům středním, tropickým a svěžím
+                            ul.selected__list
                                 li.selected__item
-                                    i Wu-dong Dai-quiri
-                                    span Spojení protikladů na téma jin a jang – easy kyselost daiquiri + vypečená čínská čajovost = dokonalost.
+                                    i Koc-boule
+                                    span Merlot ve vášnivém polibku s marakujou. Sexy pochutnání!
                                 li.selected__item
-                                    i Moroccan Breakfast
-                                    span Pramen zdraví, nikoli z Posázaví, ale z Maroka. Podmáslí, máta – a samozřejmě vodka.
+                                    i Gimme! Limme!
+                                    span Nabroušený a kyselkavě vybalancovaný gimlet. Nebezpečná záležitost!
                                 li.selected__item
-                                    i I know What You Did Last Summer
-                                    span Vzpomínka na to nejvíc nejlepší léto, zabalená do “špricnutého” zeleného čaje.
+                                    i No honey thyme?
+                                    span Bourbon na koňském dostihu, hořkosladký pot ušlechtilých hnědáků. Vsazeno na vítězství!
+                                li.selected__item
+                                    i Něžná litva
+                                    span Květinková víla na návštěvě ve vinném sklípku. Něžný ročník!
+                                li.selected__item
+                                    i Barbie sour
+                                    span Tělo Barbie ve vaně zakryté ovocnou pěnou. Chuťová symetrie! 
+
+                            h4.selected__heading.selected__heading--small K farcům hutným, krémovým, netradičním
+                            ul.selected__list
+                                li.selected__item
+                                    i Zbytek Meruňka pri káve
+                                    span Meruňka pri káve zapíjená kefírem. Nutriční ohňostroj!
+                                li.selected__item
+                                    i Paradajk of death - naše bloodyna
+                                    span Rajčatový masakr v asijském zálivu. Krvavá lázeň!
+                                li.selected__item
+                                    i Jogobella vrací úder
+                                    span Borůvkový sorbet z té nejlepší cukrárny. Modrovousův hlad!
+
+                        .selected__content#jidlo
+                            h4.selected__heading Slastné jídlo
+                            div.selected__grid-wrapper
+                                p.selected__p Jídlo je nejstarším zdrojem pozemské slasti. A my ho vytahujem ještě o level výš – k naprosté nadpozemskosti! Jak jinak byste chtěli pojmenovat fenomenální olivy od kuchařského dua Carlini, ulítlou Trash Arabic Pita Pizzu, nebo teriyaki jerky, kterých se prostě nemůžete nabažit? A to jste ještě neochutnali náš popcorn&hellip; Asi není nutno dodávat, že se inspirujeme hlavně na Blízkém východě, k farcům nám to prostě sedí!
+                            ul.selected__list
+                                li.selected__item
+                                    i Olivy Carlini
+                                li.selected__item
+                                    i Jerky worchester/teriyaki/chilli/mustard
+                                li.selected__item
+                                    i Arašídy
+                                li.selected__item
+                                    i Čát čapát
+                                li.selected__item
+                                    i Háš hommos s pitou
+                                li.selected__item
+                                    i Naše jogurtová pomazánka s pitou
+                                li.selected__item
+                                    i Arabic pita pizza
+                                    span Není to pizza jak ji znáte, není to pita jak ji znáte. Je to zcela nová gastro kategorie  – TRASH ARABIC PIZZA stvořená Brnu na míru námi ve Slasti. Máme komba, která uspokojí masožrouty, vegany i vegetariány, neboť ctíme heslo – Slast pro všechny!
                         .selected__content#panaky-pivo-vino
                             h4.selected__heading Panáky &amp; Pivo &amp; víno 
                             div.selected__grid-wrapper
-                                p.selected__p Co by byl lounge bar (a vlastně jakýkoli bar!) bez pořádné zásoby panáků? A pořádná zásoba pro nás znamená asi 180 lahví, takže račte vybírat. Doplňujeme excelentním pivkem Chomout a několika pečlivě vybranými vinnými záležitostmi.
-                        .selected__content#zazracna
-                            h4.selected__heading Zázračná &amp; shruby a fermentáty 
+                                p.selected__p Co by byl lounge bar (a vlastně jakýkoli bar!) bez pořádné zásoby panáků? A pořádná zásoba pro nás znamená asi 180 lahví, takže račte vybírat. Doplňujeme excelentním pivkem Chomout, několika pečlivě vybranými vinnými záležitostmi a suchým ciderem Tátův sad.
+                        .selected__content#nealko
+                            h4.selected__heading Nealko
                             div.selected__grid-wrapper
                                 p.selected__p Neholdujete alkoholu? Nealko ve Slasti není žádná béčková volba. Masivní výběr z barmanské limonády Zázračná, která se může honosit těmi nejzajímavějšími příchutěmi široko daleko, doplňují naše vlastní shruby a fermentáty.
                             ul.selected__list
                                 li.selected__item
-                                    i Shruby
+                                    i Shrubové limonády
                                     ul
-                                        li Banán-muškát
-                                        li Liči-ibišek
-                                        li Dýně-švestka-citronová tráva
+                                        li kokos - kardamom
+                                        li banán - muškát
+                                        li liči - ibiček
                                 li.selected__item
-                                    i Fermentáty 
-                                    ul
-                                        li Mango Yun
-                                        li Jasmín-pomelo
-                                        li Oolong-syrovátka
+                                    i Fermentáty
+                                    span Zeptejte se nás, co jsme pro vás nafermentovali dnes!
                                 li.selected__item
                                     i Zázračná
-                                    span Berlínský pití z Brna, aneb přírodní, lokální a ještě k tomu barmanská, neboli vyráběná mixologickými mistry a mistryněmi.
+                                    span Brněnský pití z Brna
+                                li.selected__item
+                                    i Čaje
+                                    span V naší nabídce máme čaje z celého světa a navíc i náš vlastní mix světoznámého čaje Touareg.
+                                li.selected__item
+                                    i Káva
+                                    span Filtrovaná káva na takové to slastné popíjení.
         section.content.content--farec#farec
             .grid
                 .grid__wrapper
@@ -183,10 +213,10 @@ block content
                             .content__layer
                                 h2.content__h2 farec
                                 h3.content__h3 Guilty pleasure v elegantním balení.
-                                p.content__paragraph Opírá se Váš názor na dýmky o 12 let starou zkušenost s ušmudlaným kouřostrojem? Jste ideální Slastný člověk! Přijďte se přesvědčit, že dýmkařské řemeslo jde ohromně dopředu. Čekejte desítky různých designových i hightech dýmek a personál, který Vám pomůže vybrat dýmový zážitek na míru. 
+                                p.content__paragraph Nevěříme, že slast z vonného kouře patří jenom hrstce zasvěcených, ale stejně tak nás nebaví ušmudlané dýmky z roku raz dva. Farcový zážitek ve Slasti je jako symfonie, složená z nejlepších dýmek na trhu, širokého spektra prémiových tabáků a ovocných korunek a hlavně – dirigovaná přímo pro vás. Naši farcaři totiž za vaši slast ručí svým vlastním dýmkařským srdcem!
                                 ul.selection.selection--center(data-selection='farec')
                                     li.selection__item
-                                        a(href='#ukazfarec').selection__link Ukážeme Vám náš farec!
+                                        a(href='#ukazfarec').selection__link Drink &amp; Dým
         section.selected(data-selected='farec')
             span.selected__close
                 .sr-only Zavřít
@@ -196,7 +226,22 @@ block content
                         .selected__content.selected__content--desc#ukazfarec
                             h4.selected__heading farec
                             div.selected__grid-wrapper
-                                p.selected__p V Brně je dýmkáren poměrně dost a část z nich nás hodně baví. Zbytek ale jede všechno na jeden způsob. Takže jsme se rozhodli „skočit do ringu“ a pootočit trochu tím naším brněnským kolem. Vidíme v tom určitou paralelu k době, kdy jsme otevírali Bar, který neexistuje. Koktejlové bary samozřejmě existovaly, ale jak široká skupina lidí do nich chodila? A kolik z nás znalo jiný koktejl než Mojito? Vymezili jsme se tenkrát už tím, že jsme začali užívat slovo „drink”. Teď jsme na tom podobně – a naše slovo je “farec”. Takže ať žije farec!
+                                p.selected__p Nenechávejte si své rozkoše jen pro sebe a zkuste party vychytávku, jaká nemá obdoby – lahvované verze těch nejvíc top koktejlů z minulého menu a přímo k nim na míru ušitý farec. Se kbelíkem ledu a nealkem navíc si postavíte váš ideální koktejl stejně snadno jako lego. A zábavy si užijete ještě třikrát víc.
+                            ul.selected__list
+                                li.selected__item
+                                    i Tropical Storm of Monkey Farecpairing
+                                    ul
+                                        li 5 porcí drinku Banana Guerilla
+                                        li Zázračná Woody soda
+                                        li banánové bonbónky
+                                        li farec tropických chutí, jemně krémový a kořeněný, ovocný
+                                li.selected__item
+                                    i Rastafarciana Coke Session Farecpairing
+                                    ul
+                                        li pět porcí drinku Just another morning coke
+                                        li Zázračná Kola
+                                        li limetky a grepy
+                                        li farec citrusových chutí, s kolovou příchutí a citrusovou korunkou
         section.content.content--art#art
             .grid
                 .grid__wrapper.flex-switch
@@ -204,47 +249,15 @@ block content
                         .content__wrapper
                             h2.content__h2 art
                             h3.content__h3 Nekonečno inspirace s sebou.
-                            p.content__paragraph Každý má svou slast, a proto i naše SLAST musí být pestrá. Svěřili jsme každou z šesti místností jinému umělci. Jediné zadání bylo: žádné překážky! Jednotlivé „výstavy” budou trvat půl roku, pak se umělci vystřídají s dalšími. A kromě dvou umělecky zpracovaných židlí, které po každém umělci zůstanou jako jeho podpis, si budete všechno ostatní moct koupit domů!
+                            p.content__paragraph Dobré pití je fajn, stejně jako super farec, ale to, co je okolo, je podle nás stejně důležité. Proto jsme svěřili každou z šesti místností jinému umělci, aby jí dodal jedinečnou podobu. Jediné zadání bylo: žádné překážky! A to nejlepší na konec? Náš art je na prodej, takže na nic nečekejte a pořiďte si domů svůj svůj kus slastného umění!
                             ul.selection(data-selection='art')
                                 li.selection__item
-                                    a(href='#fungovani').selection__link Jak to bude celé fungovat?
+                                    a(href='/art').selection__link.selection__link--page Aktuální Slastné výstavy
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-3-5
                         .content__img.content__img--andrej
                             img(data-src='./img/art.jpg', alt='Andrej', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
-        section.selected(data-selected='art')
-            span.selected__close
-                .sr-only Zavřít
-            .grid
-                .grid__wrapper
-                    .grid__unit.grid__unit--1
-                        .selected__content.selected__content--desc#fungovani
-                            h4.selected__heading art
-                            div.selected__grid-wrapper
-                                p.selected__p Art do veřejného prostoru patří – a proto patří i do Slasti. Ale patří i k lidem domů, aspoň k těm, co ho vážně milují. Proto Vám chceme dát možnost odnést si kousek slastného artu s sebou. Díla, která budou v jednotlivých místnostech Slasti, budou po skončení výstav určená k dražbě nebo přímému prodeji. Zatím přesně nevíme, jak to celé udělat. Docela nás nadchla myšlenka dlouhodobé online aukce, kde můžete přihazovat na mobilu přes QR kód třeba rovnou při kouření farce. O něco míň sexy variantou je cesta „kup teď”. Jednoduše si svůj art vyhlédnete a rezervujete si ho předem. Ale jak říkáme - je to pro nás nová věc, takže se od Vás rádi necháme inspirovat. Takže pokud máte nějaký nápad/podnět/názor, sem s ním!
         footer.footer
             .grid.grid--footer
-                .form#mail
-                    .grid__wrapper.grid__wrapper--center-items
-                        .grid__unit.grid__unit--1.grid__unit--md-2-3
-                                .form__wrapper
-                                    h2.form__heading Chcete zažít Slast jako první, 
-                                        br
-                                        | nebo třeba ochutnat koktejly a farce?
-                                    p.form__p Nechte nám tady svůj mail a dozvíte se všechno z první ruky!
-                                    .form__panel
-                                        label Jméno
-                                        input(type="text", placeholder="Jméno")
-                                        label Email
-                                        input(type="text", placeholder="Email")
-                                        .f-checkbox
-                                            #p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_ncposobniudaje.EditingFormControlNestedControl.editing-form-control-nested-control
-                                                span.CheckBoxField.checkbox
-                                                input#p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_checkbox(type='checkbox', name='p$lt$ctl02$pageplaceholder$p$lt$ctl04$On_lineForm$plcUp$viewBiz$OsobniUdaje$checkbox')
-                                                label(for='p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_checkbox')  
-                                            label#p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_lb.EditingFormLabel(for='p_lt_ctl02_pageplaceholder_p_lt_ctl04_On_lineForm_plcUp_viewBiz_OsobniUdaje_checkbox')
-                                                | Souhlasím se 
-                                                a(href='/zpracovani-osobnich-udaju', target='_blank') zpracováním osobních údajů
-                                        input(type="submit", value="Odeslat")
                 .grid__wrapper
                     .grid__unit.grid__unit--1
                         ul.logos     

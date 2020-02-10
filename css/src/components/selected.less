@@ -68,6 +68,21 @@
         @media (min-width: 1180px) {
             font-size: 3.25em;
         }
+
+        &--small {
+            max-width: none;
+            font-size: 1.375em;
+            width: 100%;
+
+            @media (min-width: 480px) {
+                font-size: 1.75em;
+                padding: 0 0 .25em;
+            }
+    
+            @media (min-width: 1180px) {
+                font-size: 2em;
+            }
+        }
     }
 
     &__grid-wrapper {
@@ -96,6 +111,11 @@
 
 	&__list {
         width: 100%;
+        margin: 0 0 1.5em;
+
+        &:last-child {
+            margin: 0;
+        }
 
         @media (min-width: 568px) {
             display: flex;
