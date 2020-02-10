@@ -1101,14 +1101,15 @@ main {
   color: #fff;
   border: 1px solid #fff;
   font-family: 'Greta Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 900;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  padding: 8px 16px;
+  padding: 16px 24px;
   display: inline-block;
-  font-size: 1.125em;
-  margin: 0.75em 0 0;
+  font-size: 1.75em;
+  margin: 0.5em 0 0;
+  font-style: italic;
 }
 .heading__note-btn:hover {
   text-decoration: none;
