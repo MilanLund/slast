@@ -1225,7 +1225,7 @@ main {
 }
 @media (min-width: 568px) {
   .content__img--koktejl {
-    width: 120%;
+    width: 100%;
     right: 0;
     top: 0;
     position: absolute;
@@ -1239,7 +1239,7 @@ main {
 @media (min-width: 1180px) {
   .content__img--koktejl {
     top: -14%;
-    width: 105%;
+    width: 100%;
     right: -6%;
   }
 }
