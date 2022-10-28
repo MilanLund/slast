@@ -1297,11 +1297,11 @@ main {
   text-decoration: underline;
 }
 .content--farec {
-  padding: 2em 0 4em;
+  padding: 0 0 2em;
 }
 @media (min-width: 568px) {
   .content--farec {
-    padding: 0 0 2em;
+    padding: 2em 0 4em;
   }
 }
 .social {
