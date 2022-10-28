@@ -1,7 +1,7 @@
 extends includes/layout.pug
 block content
     main(id='main')
-        nav.navigation#navigation
+        //-nav.navigation#navigation
             .navigation__logo
                 img(src='./img/logo2020.png', alt='Slast')
             a(href='#nav').navigation__trigger 
@@ -33,7 +33,6 @@ block content
                     .grid__unit.grid__unit--1.grid__unit--sm-3-5.grid__unit--md-1-2.utilities-layer-3
                         .heading__wrapper
                             h1.heading__title 
-                                span.heading__title-positioned Svoboda je
                                 span.sr-only Slast
                             p.heading__paragraph
                                 | Nestačí si něco užívat – člověk musí být zaplavený rozkoší až po uši, aby tomu začal říkal 
@@ -242,7 +241,7 @@ block content
                                         li Zázračná Kola
                                         li limetky a grepy
                                         li farec citrusových chutí, s kolovou příchutí a citrusovou korunkou
-        section.content.content--art#art
+        //-section.content.content--art#art
             .grid
                 .grid__wrapper.flex-switch
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-2-5
@@ -298,7 +297,7 @@ block content
                 .grid__unit.grid__unit--1.grid__unit.grid__unit--sm-1-3
                     img.footer__logo(data-src='./img/logo-red.png', alt='Slast', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
                 .grid__unit.grid__unit--1.grid__unit.grid__unit--sm-2-3
-                    ul.navigation__list.navigation__list--footer
+                    //-ul.navigation__list.navigation__list--footer
                         li.navigation__item
                             a(href='#koktejl').navigation__link koktejl
                         li.navigation__item
