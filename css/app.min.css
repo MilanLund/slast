@@ -1200,7 +1200,7 @@ main {
 @media (min-width: 568px) {
   .content__img--dymka {
     width: 120%;
-    left: -100%;
+    left: -115%;
     top: 0;
     position: absolute;
   }
@@ -1213,7 +1213,7 @@ main {
 }
 @media (min-width: 1280px) {
   .content__img--dymka {
-    left: -78%;
+    left: -90%;
   }
 }
 .content__img--koktejl {
@@ -1297,7 +1297,12 @@ main {
   text-decoration: underline;
 }
 .content--farec {
-  padding: 0 0 4em;
+  padding: 2em 0 4em;
+}
+@media (min-width: 568px) {
+  .content--farec {
+    padding: 0 0 2em;
+  }
 }
 .social {
   text-align: right;
