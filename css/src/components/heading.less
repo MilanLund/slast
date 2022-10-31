@@ -28,6 +28,40 @@
         background-size: contain; 
         width: 100%;
         padding-bottom: 33%;
+
+        &-positioned {
+            position: absolute;
+            color: #ff3500;
+            font-family: 'Greta Sans Ext', sans-serif;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 32px;
+            top: -48px;
+            left: 24%;
+
+            @media (min-width: 568px) {
+                left: 34%;
+                font-size: 24px;
+                top: -24px;
+            }
+
+            @media (min-width: 720px) {
+                left: 34%;
+                font-size: 24px;
+                top: 12px;
+            }
+
+            @media (min-width: 1024px) {
+                left: 34%;
+                font-size: 28px;
+                top: 18px;
+            }
+
+            @media (min-width: 1180px) {
+                left: 37%;
+                font-size: 32px;
+            }
+        }  
 	}
 
 	&__paragraph {

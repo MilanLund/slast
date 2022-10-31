@@ -1024,6 +1024,43 @@ main {
   width: 100%;
   padding-bottom: 33%;
 }
+.heading__title-positioned {
+  position: absolute;
+  color: #ff3500;
+  font-family: 'Greta Sans Ext', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+  top: -48px;
+  left: 24%;
+}
+@media (min-width: 568px) {
+  .heading__title-positioned {
+    left: 34%;
+    font-size: 24px;
+    top: -24px;
+  }
+}
+@media (min-width: 720px) {
+  .heading__title-positioned {
+    left: 34%;
+    font-size: 24px;
+    top: 12px;
+  }
+}
+@media (min-width: 1024px) {
+  .heading__title-positioned {
+    left: 34%;
+    font-size: 28px;
+    top: 18px;
+  }
+}
+@media (min-width: 1180px) {
+  .heading__title-positioned {
+    left: 37%;
+    font-size: 32px;
+  }
+}
 .heading__paragraph {
   position: relative;
   padding: 16px 0;
