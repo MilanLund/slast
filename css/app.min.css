@@ -1018,7 +1018,7 @@ main {
 }
 .heading__title {
   position: relative;
-  background-image: url('../img/slast-heading.gif');
+  background-image: url('../img/slast-heading-smooth.gif');
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
