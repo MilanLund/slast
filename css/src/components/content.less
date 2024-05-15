@@ -1,218 +1,225 @@
 .content {
-	font-family: 'Greta Sans', serif;
+  font-family: "Greta Sans", serif;
 
-	&__wrapper {
-		padding: 8% 0 4%;
-		position: relative;
-		z-index: 200;
+  &__wrapper {
+    padding: 8% 0 4%;
+    position: relative;
+    z-index: 200;
 
-		@media (min-width: 568px) {
-			padding: 24% 0 8% 0;
-		}
+    @media (min-width: 568px) {
+      padding: 24% 0 8% 0;
+    }
 
-		.content--farec & {
-			padding: 8% 0 4%;
+    .content--farec & {
+      padding: 8% 0 4%;
 
-			@media (min-width: 568px) {
-				padding: 18% 0 16% 0;
-			}
-		}
-	}
+      @media (min-width: 568px) {
+        padding: 18% 0 16% 0;
+      }
+    }
 
-	&__paragraph {
-		padding: 0 0 24px;
-		position: relative;
+    .content--gallery & {
+      padding: 8% 0 20%;
 
-		i {
-            font-family: 'Greta Sans', sans-serif;
-            font-weight: normal;
-            font-style: italic;
-		}
-		
-		&--narrow {
-			max-width: 470px;
-		}
+      @media (min-width: 568px) {
+        padding: 6% 0 8%;
+      }
+    }
+  }
 
-		strong {
-			font-weight: 700;
-		}
+  &__paragraph {
+    padding: 0 0 24px;
+    position: relative;
 
-		p {
-			padding: 0 0 24px;
-		}
+    i {
+      font-family: "Greta Sans", sans-serif;
+      font-weight: normal;
+      font-style: italic;
+    }
 
-		a {
-			color: #fff;
-			text-decoration: underline;
+    &--narrow {
+      max-width: 470px;
+    }
 
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
+    strong {
+      font-weight: 700;
+    }
 
-	&__price {
-		font-family: 'Greta Sans Ext', sans-serif;
-		color: #fff;
-		font-weight: 900;
-		padding: 0 0 2em;
-		position: relative;
-	}
+    p {
+      padding: 0 0 24px;
+    }
 
-	&__h2 {
-		font-family: 'Greta Sans Ext', sans-serif;
-		color: #ff3500;
-		font-weight: 900;
-		font-style: italic;
-		font-size: 28px;
-		padding: 0 0 4px;
-		position: relative;
+    a {
+      color: #fff;
+      text-decoration: underline;
 
-		@media (min-width: 568px) {
-			font-size: 32px;
-			padding: 0 0 8px;
-		}
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 
-		&:after {
-			content: '.';
-		}
-	}
+  &__price {
+    font-family: "Greta Sans Ext", sans-serif;
+    color: #fff;
+    font-weight: 900;
+    padding: 0 0 2em;
+    position: relative;
+  }
 
-	&__h3 {
-		font-family: 'Greta Sans', sans-serif;
-		color: #fff;
-		font-weight: 300;
-		font-style: italic;
-		font-size: 28px;
-		line-height: 1em;
-		padding: 0 0 8px;
-		position: relative;
+  &__h2 {
+    font-family: "Greta Sans Ext", sans-serif;
+    color: #ff3500;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 28px;
+    padding: 0 0 4px;
+    position: relative;
 
-		@media (min-width: 568px) {
-			font-size: 32px;
-			padding: 0 0 12px;
-		}
+    @media (min-width: 568px) {
+      font-size: 32px;
+      padding: 0 0 8px;
+    }
 
-		@media (min-width: 896px) {
-			font-size: 40px;
-			padding: 0 0 12px;
-		}
+    &:after {
+      content: ".";
+    }
+  }
 
-	}
+  &__h3 {
+    font-family: "Greta Sans", sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 1em;
+    padding: 0 0 8px;
+    position: relative;
 
-	&__layer {
-		position: relative;
-		z-index: 200;
-	}
+    @media (min-width: 568px) {
+      font-size: 32px;
+      padding: 0 0 12px;
+    }
 
-	&__img {
-		min-height: 200px;
+    @media (min-width: 896px) {
+      font-size: 40px;
+      padding: 0 0 12px;
+    }
+  }
 
-		&--dymka {
-			z-index: 1;
+  &__layer {
+    position: relative;
+    z-index: 200;
+  }
 
-			@media (min-width: 568px) {
-				width: 120%;
-				left: -115%;
-				top: 0;
-				position: absolute;
-			}
+  &__img {
+    min-height: 200px;
 
-			@media (min-width: 1024px) {
-				width: 85%;
-				top: -5%;
-			}
+    &--dymka {
+      z-index: 1;
 
-			@media (min-width: 1280px) {
-				left: -90%;
-			}
-		}
+      @media (min-width: 568px) {
+        width: 120%;
+        left: -115%;
+        top: 0;
+        position: absolute;
+      }
 
-		&--koktejl {
-			text-align: right;
-			width: 100%;
-			position: relative;
-			right: 0; 
-			z-index: 1;
-			
+      @media (min-width: 1024px) {
+        width: 85%;
+        top: -5%;
+      }
 
-			@media (min-width: 568px) {
-				width: 100%;
-				right: 0;
-				top: 0;
-				position: absolute;
-			}
+      @media (min-width: 1280px) {
+        left: -90%;
+      }
+    }
 
-			@media (min-width: 992px) {
-				width: 90%;
-			}
+    &--koktejl {
+      text-align: right;
+      width: 100%;
+      position: relative;
+      right: 0;
+      z-index: 1;
 
-			@media (min-width: 1180px) {
-				top: -14%;
-				width: 100%;
-				right: -6%;
-			}
-		
-			img {
-				display: inline-block;
-			}
+      @media (min-width: 568px) {
+        width: 100%;
+        right: 0;
+        top: 0;
+        position: absolute;
+      }
 
-			img[src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="] {
-				float: left;
-			}
-		}
+      @media (min-width: 992px) {
+        width: 90%;
+      }
 
-		&--andrej {
-			position: relative;
+      @media (min-width: 1180px) {
+        top: -14%;
+        width: 100%;
+        right: -6%;
+      }
 
-			@media (min-width: 568px) {
-				left: -50%;
-			}
+      img {
+        display: inline-block;
+      }
 
-			@media (min-width: 896px) {
-				left: -18%;
-			}
-		
-			img {
-				display: inline-block;
-				width: 100%;
-				max-width: none;
+      img[src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="] {
+        float: left;
+      }
+    }
 
-				@media (min-width: 568px) {
-					width: 200%;
-				}
+    &--andrej {
+      position: relative;
 
-				@media (min-width: 896px) {
-					width: 130%;
-				}
-			}
-		}
-	}
+      @media (min-width: 568px) {
+        left: -50%;
+      }
 
-	&__link {
-		position: relative;
-		z-index: 1000;
-		font-family: 'Greta Sans Ext', sans-serif;
-		font-weight: 900;
-		color: #fff;
-		text-decoration: underline;
-		display: block;
-		padding: 0 0 2em;
+      @media (min-width: 896px) {
+        left: -18%;
+      }
 
-		@media (min-width: 480px) {
-			padding: 0 0 4em;
-		}
+      img {
+        display: inline-block;
+        width: 100%;
+        max-width: none;
 
-		&:hover, &:active {
-			text-decoration: underline;
-		}
-	}
+        @media (min-width: 568px) {
+          width: 200%;
+        }
 
-	&--farec {
-		padding: 0 0 2em;
+        @media (min-width: 896px) {
+          width: 130%;
+        }
+      }
+    }
+  }
 
-		@media (min-width: 568px) {
-			padding: 2em 0 4em;
-		}
-	}
+  &__link {
+    position: relative;
+    z-index: 1000;
+    font-family: "Greta Sans Ext", sans-serif;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    padding: 0 0 2em;
+
+    @media (min-width: 480px) {
+      padding: 0 0 4em;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+
+  &--farec {
+    padding: 0 0 2em;
+
+    @media (min-width: 568px) {
+      padding: 2em 0 4em;
+    }
+  }
 }

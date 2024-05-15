@@ -256,6 +256,42 @@ block content
                     .grid__unit.grid__unit--1.grid__unit--sm-1-2.grid__unit--md-3-5
                         .content__img.content__img--andrej
                             img(data-src='./img/art.jpg', alt='Andrej', src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")
+        section.content.content--gallery
+            <svg class="sr-only">
+                <g id="gallery-arrow">
+                    <path stroke="currentColor" stroke-width="3" stroke-linejoin="round" fill="none" d="M2.891 3.257 20.97 21.336 2.891 39.416"/>
+                </g>
+            </svg>
+            .grid
+                .grid__wrapper
+                    .grid__unit.grid__unit--1
+                        .content__wrapper
+                            .gallery.splide
+                                .splide__arrows
+                                    button.splide__arrow.splide__arrow--prev
+                                        span.sr-only Předchozí
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25.5" height="43.5"><use xlink:href="#gallery-arrow"></svg>
+                                    button.splide__arrow.splide__arrow--next
+                                        span.sr-only Další
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25.5" height="43.5"><use xlink:href="#gallery-arrow"></svg>
+                                .splide__track
+                                    ul.splide__list
+                                        li.splide__slide
+                                            picture
+                                                source(srcset='/img/gallery/IMG_1553.jpg', media='(min-resolution: 2dppx)')
+                                                img.gallery__img(src='/img/gallery/IMG_1553.jpg', alt='', loading='lazy')
+                                        li.splide__slide
+                                            picture
+                                                source(srcset='/img/gallery/IMG_3098.jpg', media='(min-resolution: 2dppx)')
+                                                img.gallery__img(src='/img/gallery/IMG_3098.jpg', alt='', loading='lazy')
+                                        li.splide__slide 
+                                            picture
+                                                source(srcset='/img/gallery/IMG_4707.jpg', media='(min-resolution: 2dppx)')
+                                                img.gallery__img(src='/img/gallery/IMG_4707.jpg', alt='', loading='lazy')
+                                        li.splide__slide 
+                                            picture
+                                                source(srcset='/img/gallery/IMG_4844.jpg', media='(min-resolution: 2dppx)')
+                                                img.gallery__img(src='/img/gallery/IMG_4844.jpg', alt='', loading='lazy')
         footer.footer
             .grid.grid--footer
                 .grid__wrapper
